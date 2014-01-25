@@ -12,13 +12,15 @@
     <foregrounds/>
     <joints/>
     <regions>
-        <region b="64" g="64" h="72" id="0" name="Region 0" pts="4,66.0,0.0,66.0,72.0,0.0,72.0,0.0,0.0" r="64" type="box" w="66" x="692" y="763"/>
+        <region b="64" g="64" h="72" id="0" name="Region 0" pts="4,0.0,0.0,0.0,72.0,66.0,72.0,66.0,0.0" r="64" type="box" w="66" x="692" y="763"/>
     </regions>
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="0" id="432" name="Jumper 1" sx="1.0" sy="1.0" x="69" y="767" z="0"/>
     </actors>
-    <snippets/>
+    <snippets>
+        <s enabled="true" id="219"/>
+    </snippets>
     <terrain>
         <p pts="4,96.0,0.0,96.0,32.0,0.0,32.0,0.0,0.0" x="416.0" y="448.0"/>
         <p pts="4,0.0,32.0,0.0,0.0,96.0,0.0,96.0,32.0" x="1504.0" y="256.0"/>
