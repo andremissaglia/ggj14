@@ -11,23 +11,24 @@
         <group desc="" id="7" name="Pickups"/>
     </groups>
     <cgroups>
-        <cgroup g1="7" g2="0"/>
-        <cgroup g1="0" g2="3"/>
-        <cgroup g1="3" g2="4"/>
-        <cgroup g1="4" g2="1"/>
-        <cgroup g1="6" g2="1"/>
         <cgroup g1="5" g2="1"/>
+        <cgroup g1="3" g2="0"/>
+        <cgroup g1="3" g2="4"/>
+        <cgroup g1="7" g2="0"/>
+        <cgroup g1="1" g2="0"/>
+        <cgroup g1="1" g2="6"/>
+        <cgroup g1="1" g2="4"/>
     </cgroups>
     <input>
-        <key id="0" keyname="C" name="groundpound" vk="67"/>
-        <key id="1" keyname="DOWN" name="duck" vk="40"/>
-        <key id="2" keyname="LEFT" name="left" vk="37"/>
-        <key id="3" keyname="X" name="run" vk="88"/>
-        <key id="4" keyname="RIGHT" name="right" vk="39"/>
-        <key id="5" keyname="UP" name="up" vk="38"/>
-        <key id="6" keyname="Z" name="jump" vk="90"/>
-        <key id="7" keyname="UP" name="jetpack" vk="38"/>
-        <key id="8" keyname="X" name="grapple" vk="88"/>
+        <key id="0" keyname="C" name="groundpound" vk="67" vks="67"/>
+        <key id="1" keyname="DOWN" name="duck" vk="40" vks="40"/>
+        <key id="2" keyname="LEFT" name="left" vk="37" vks="37"/>
+        <key id="3" keyname="X" name="run" vk="88" vks="88"/>
+        <key id="4" keyname="RIGHT" name="right" vk="39" vks="39"/>
+        <key id="5" keyname="UP" name="up" vk="38" vks="38"/>
+        <key id="6" keyname="Z" name="jump" vk="90" vks="90"/>
+        <key id="7" keyname="UP" name="jetpack" vk="38" vks="38"/>
+        <key id="8" keyname="X" name="grapple" vk="88" vks="88"/>
     </input>
     <attcats>
         <cat id="0" name="Scoring"/>
