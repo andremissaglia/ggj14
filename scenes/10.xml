@@ -12,21 +12,8 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="1" c="false" group="0" id="432" name="Jumper 1" sx="1.0" sy="1.0" x="64" y="192" z="0"/>
-        <actor a="0.0" aid="2" c="true" group="7" id="475" name="FinishLevel 2" sx="1.0" sy="1.0" x="4" y="126" z="2">
-            <snippets>
-                <s enabled="true" id="223"/>
-                <s enabled="true" id="123">
-                    <prop id="1" list="0" val="false"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                </s>
-                <s enabled="true" id="224">
-                    <prop id="1" list="0" val="9"/>
-                    <prop id="2" list="0" val="1.0"/>
-                    <prop id="2147483647" list="0" val="thisactor"/>
-                </s>
-            </snippets>
-        </actor>
+        <actor a="0.0" aid="1" c="false" group="0" id="432" name="Jumper 1" sx="1.0" sy="1.0" x="95" y="187" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="7" id="485" name="Tomato 2" sx="1.0" sy="1.0" x="5" y="187" z="0"/>
     </actors>
     <snippets>
         <s enabled="true" id="219">
@@ -34,6 +21,6 @@
         </s>
     </snippets>
     <terrain>
-        <p pts="4,608.0,0.0,608.0,64.0,0.0,64.0,0.0,0.0" x="0.0" y="256.0"/>
+        <p pts="8,0.0,192.0,0.0,96.0,224.0,96.0,224.0,0.0,384.0,0.0,384.0,64.0,416.0,64.0,416.0,192.0" x="0.0" y="128.0"/>
     </terrain>
 </scene>
