@@ -122,8 +122,8 @@
                 <prop id="12" list="0" val="left"/>
                 <prop id="13" list="0" val="0.4"/>
                 <prop id="14" list="0" val="true"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="run-r"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="run-r"/>
                 <prop id="16" list="0" val="run-l"/>
                 <prop id="19" list="0" val="run-r"/>
@@ -226,8 +226,8 @@
                 <prop id="12" list="0" val="250"/>
                 <prop id="13" list="0" val="65"/>
                 <prop id="14" list="0" val="jump-r"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="jump-l"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="Wall Jumping"/>
                 <prop id="16" list="0" val="false"/>
             </s>
