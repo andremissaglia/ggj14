@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="218" extheight="384" extwidth="672" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="0.0" height="320" id="9" name="Level 02" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="608">
+<scene depth="1" desc="" eventsnippetid="218" extheight="384" extwidth="672" extx="-32" exty="-32" format="2.1" gravx="-0.0" gravy="120.0" height="320" id="9" name="Level 02" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="608">
     <layers>
         <layer color="100,168,234" id="0" name="Layer 0" order="0"/>
     </layers>
@@ -9,7 +9,24 @@
     <joints/>
     <regions/>
     <terrainRegions/>
-    <actors/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="0" id="432" name="Jumper 1" sx="1.0" sy="1.0" x="33" y="236" z="0"/>
+        <actor a="0.0" aid="2" c="true" group="7" id="475" name="FinishLevel 2" sx="1.0" sy="1.0" x="412" y="250" z="0">
+            <snippets>
+                <s enabled="true" id="123">
+                    <prop id="1" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="224">
+                    <prop id="1" list="0" val="8"/>
+                    <prop id="2" list="0" val="1.0"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+    </actors>
     <snippets/>
-    <terrain/>
+    <terrain>
+        <p pts="4,608.0,0.0,608.0,32.0,0.0,32.0,0.0,0.0" x="0.0" y="288.0"/>
+    </terrain>
 </scene>

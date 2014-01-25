@@ -17,6 +17,19 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="0" id="432" name="Jumper 1" sx="1.0" sy="1.0" x="69" y="767" z="0"/>
+        <actor a="0.0" aid="2" c="true" group="7" id="475" name="FinishLevel 2" sx="5.0625" sy="6.25" x="468" y="675" z="2">
+            <snippets>
+                <s enabled="true" id="123">
+                    <prop id="1" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+                <s enabled="true" id="224">
+                    <prop id="1" list="0" val="9"/>
+                    <prop id="2" list="0" val="1.0"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
     </actors>
     <snippets>
         <s enabled="true" id="219"/>
