@@ -12,7 +12,7 @@
     <foregrounds/>
     <joints/>
     <regions>
-        <region b="64" g="64" h="72" id="0" name="Region 0" pts="4,0.0,0.0,0.0,72.0,66.0,72.0,66.0,0.0" r="64" type="box" w="66" x="692" y="763"/>
+        <region b="64" g="64" h="72" id="0" name="Region 0" pts="4,66.0,0.0,66.0,72.0,0.0,72.0,0.0,0.0" r="64" type="box" w="66" x="692" y="763"/>
     </regions>
     <terrainRegions/>
     <actors>

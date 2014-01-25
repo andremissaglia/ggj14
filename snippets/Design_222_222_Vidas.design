@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <scene-reload-new comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                    <get-val-222-3 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="1"/>
+                </scene-reload-new>
+                <set-game-val-5 comment="false" x="26" y="72">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-game-val-5>
+                <print comment="false" x="26" y="102">
+                    <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                </print>
+                <if comment="false" x="26" y="127">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="157">
+                            <group eventID="2" id="-1">
+                                <set-game-val-4 comment="false" x="48" y="187">
+                                    <int id="0" val="0"/>
+                                </set-game-val-4>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </eq>
+                        </if>
+                        <else comment="false" x="37" y="219">
+                            <group eventID="2" id="-1">
+                                <set-game-val-4 comment="false" x="48" y="239">
+                                    <int id="0" val="1"/>
+                                </set-game-val-4>
+                            </group>
+                        </else>
+                        <scene-shout comment="false" x="37" y="271">
+                            <int id="0" val="setState"/>
+                        </scene-shout>
+                        <set-game-val-5 comment="false" x="37" y="291">
+                            <get-val-222-4 comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-5>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </lesseq>
+                </if>
+            </group>
+            <int id="0" val="subLife"/>
+        </event-custom>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
