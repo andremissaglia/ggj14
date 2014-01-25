@@ -9,14 +9,13 @@
         <group desc="" id="9" name="Enemies"/>
     </groups>
     <cgroups>
-        <cgroup g1="9" g2="1"/>
-        <cgroup g1="9" g2="0"/>
+        <cgroup g1="0" g2="9"/>
+        <cgroup g1="0" g2="7"/>
+        <cgroup g1="0" g2="3"/>
+        <cgroup g1="1" g2="9"/>
         <cgroup g1="1" g2="7"/>
         <cgroup g1="1" g2="3"/>
-        <cgroup g1="1" g2="0"/>
         <cgroup g1="7" g2="7"/>
-        <cgroup g1="7" g2="0"/>
-        <cgroup g1="3" g2="0"/>
     </cgroups>
     <input>
         <key id="0" keyname="C" name="groundpound" vk="67" vks="67"/>
