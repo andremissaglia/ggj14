@@ -18,9 +18,17 @@
     <group eventID="2" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="2" id="-1">
-                <scene-shout comment="false" x="26" y="40">
-                    <int id="0" val="setState"/>
-                </scene-shout>
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <scene-shout comment="false" x="37" y="65">
+                            <int id="0" val="setState"/>
+                        </scene-shout>
+                        <set-game-val-1 comment="false" x="37" y="85">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-1>
+                    </group>
+                    <get-game-val-1 comment="false" id="0" x="0" y="0"/>
+                </if>
             </group>
         </init>
     </group>

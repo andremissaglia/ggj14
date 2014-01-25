@@ -33,7 +33,7 @@
             <poly data="4,0,0,10,0,10,10,0,10" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" atlasID="-1" down="1" durations="100" height="33" id="1" loop="true" name="Animation 1" numframes="1" originx="16" originy="16" width="33">
-            <poly data="4,0,0,33,0,33,33,0,33" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,33,0,33,33,0,33" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-437" blocktype="NORMAL" code="String((~.say(&quot;Animation Manager&quot;, &quot;GetCat&quot;)))" desc="" global="false" gui="Current Animation Category for %0" id="437" message="GetCat" name="GetCat" oid="-1" return="TEXT" shared="false" snippetID="169">
@@ -143,8 +143,8 @@
                 <prop id="12" list="0" val="left"/>
                 <prop id="13" list="0" val="0.4"/>
                 <prop id="14" list="0" val="true"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="run-r"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="run-r"/>
                 <prop id="16" list="0" val="run-l"/>
                 <prop id="19" list="0" val="run-r"/>
@@ -190,21 +190,6 @@
                 <prop id="2" list="0" val="0"/>
                 <prop id="3" list="0" val="0.3"/>
                 <prop id="4" list="0" val="3"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
-            </s>
-            <s enabled="true" id="115">
-                <prop id="1" list="0" val="false"/>
-                <prop id="2" list="0" val="0.0"/>
-                <prop id="3" list="0" val="false"/>
-                <prop id="4" list="0" val="0"/>
-                <prop id="5" list="0" val="0"/>
-                <prop id="6" list="0" val="999.0"/>
-                <prop id="7" list="0" val="jump"/>
-                <prop id="8" list="0" val="false"/>
-                <prop id="9" list="0" val="50"/>
-                <prop id="10" list="0" val="airjump-r"/>
-                <prop id="11" list="0" val="airjump-l"/>
-                <prop id="12" list="0" val="Air Jumping"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="114">
@@ -254,8 +239,8 @@
                 <prop id="12" list="0" val="250"/>
                 <prop id="13" list="0" val="65"/>
                 <prop id="14" list="0" val="jump-r"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="jump-l"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="Wall Jumping"/>
                 <prop id="16" list="0" val="false"/>
             </s>
