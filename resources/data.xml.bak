@@ -15,6 +15,8 @@
     <custom-block blocktag="custom-436" blocktype="ACTION" code="~.say(&quot;Animation Manager&quot;, &quot;ClearCat&quot;);" desc="" global="false" gui="Clear Current Animation for %0" id="436" message="ClearCat" name="ClearCat" oid="-1" return="VOID" shared="false" snippetID="169">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
+    <music desc="" id="482" loop="true" name="Credits" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="484" loop="true" name="Eletronic" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="225" fixedrot="false" fric="0.2" gid="3" id="477" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Enemy1" oid="-1" pausable="true" rest="0.0" shared="false" sprite="478" static="false" touchable="true">
         <snippets/>
     </actor>
@@ -47,6 +49,7 @@
             <poly data="4,0,0,33,0,33,33,0,33" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
+    <music desc="" id="483" loop="true" name="GameOver" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <custom-block blocktag="custom-437" blocktype="NORMAL" code="String((~.say(&quot;Animation Manager&quot;, &quot;GetCat&quot;)))" desc="" global="false" gui="Current Animation Category for %0" id="437" message="GetCat" name="GetCat" oid="-1" return="TEXT" shared="false" snippetID="169">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
@@ -64,11 +67,8 @@
         <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="1" loop="true" name="idle-r" numframes="1" originx="0" originy="0" width="16">
             <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="idle-r" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="2" loop="true" name="walk-l" numframes="1" originx="0" originy="0" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-l" rest="0.0" sensor="false"/>
-        </anim>
-        <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="3" loop="true" name="walk-r" numframes="1" originx="0" originy="0" width="16">
-            <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-r" rest="0.0" sensor="false"/>
+        <anim across="8" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,10" height="42" id="2" loop="true" name="walk-l" numframes="8" originx="0" originy="0" width="256">
+            <poly data="4,0,0,32,0,32,42,0,42" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-l" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="4" loop="true" name="run-l" numframes="1" originx="0" originy="0" width="16">
             <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="run-l" rest="0.0" sensor="false"/>
@@ -106,10 +106,13 @@
         <anim across="1" atlasID="-1" down="1" durations="100" height="32" id="15" loop="true" name="airjump-l" numframes="1" originx="0" originy="0" width="16">
             <poly data="4,0,0,16,0,16,32,0,32" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-l" rest="0.0" sensor="false"/>
         </anim>
+        <anim across="8" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,10" height="42" id="16" loop="true" name="walk-r" numframes="8" originx="0" originy="0" width="256">
+            <poly data="4,0,0,32,0,32,42,0,42" density="0.1" fric="0.2" gid="-1000" id="0" name="walk-r" rest="0.0" sensor="false"/>
+        </anim>
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="Simple template Actor demonstrates potential usage of Behaviors and Animations.  Please note that the Behavior Attributes are configured to work with an Actor mass of 1.0.   " eventsnippetid="221" fixedrot="true" fric="0.0" gid="0" id="432" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="1.0" name="Jumper" oid="-1" pausable="true" rest="0.0" shared="false" sprite="433" static="false" touchable="true">
         <snippets>
-            <s enabled="true" id="169">
+            <s enabled="false" id="169">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val=""/>
                 <prop id="3" list="0" val="idle-r"/>
@@ -139,7 +142,7 @@
                 <prop id="2" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="110">
+            <s enabled="false" id="110">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val="run"/>
                 <prop id="3" list="0" val="true"/>
@@ -175,12 +178,12 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="0"/>
                 <prop id="16" list="0" val="0"/>
-                <prop id="19" list="0" val="-1"/>
+                <prop id="19" list="0" val="No Sound"/>
                 <prop id="18" list="0" val="0.65"/>
                 <prop id="21" list="0" val="Jumping"/>
                 <prop id="20" list="0" val="30"/>
             </s>
-            <s enabled="true" id="108">
+            <s enabled="false" id="108">
                 <prop id="1" list="0" val="right"/>
                 <prop id="2" list="0" val="left"/>
                 <prop id="3" list="0" val="0.9"/>
@@ -203,7 +206,7 @@
                 <prop id="4" list="0" val="3"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="114">
+            <s enabled="false" id="114">
                 <prop id="1" list="0" val="0"/>
                 <prop id="2" list="0" val="false"/>
                 <prop id="3" list="0" val="fall-r"/>
@@ -212,7 +215,7 @@
                 <prop id="6" list="0" val="Falling"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="112">
+            <s enabled="false" id="112">
                 <prop id="1" list="0" val="duck"/>
                 <prop id="2" list="0" val="duck-r"/>
                 <prop id="3" list="0" val="duck-l"/>
@@ -236,7 +239,7 @@
                 <prop id="12" list="0" val="Walking"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="179">
+            <s enabled="false" id="179">
                 <prop id="2" list="0" val="false"/>
                 <prop id="3" list="0" val="false"/>
                 <prop id="4" list="0" val="false"/>
@@ -259,7 +262,7 @@
                 <prop id="1" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="180">
+            <s enabled="false" id="180">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val="false"/>
                 <prop id="3" list="0" val="false"/>
@@ -276,7 +279,7 @@
                 <prop id="14" list="0" val="Wall Sliding"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="true" id="181">
+            <s enabled="false" id="181">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val="groundpound"/>
                 <prop id="3" list="0" val="duck"/>
@@ -290,7 +293,7 @@
             </s>
         </snippets>
     </actor>
-    <tileset across="5" atlasID="0" desc="" down="4" id="479" name="Lava" oid="-1" shared="false" th="32" tw="32">
+    <tileset across="5" atlasID="0" desc="" down="7" id="479" name="Lava" oid="-1" shared="false" th="32" tw="32">
         <tile collision="1" data="" durations="100" frames="0" id="20" order="-1"/>
         <tile collision="1" data="" durations="100" frames="1" id="21" order="-1"/>
         <tile collision="1" data="" durations="100" frames="2" id="22" order="-1"/>
@@ -306,11 +309,26 @@
         <tile collision="1" data="" durations="100" frames="12" id="32" order="-1"/>
         <tile collision="1" data="" durations="100" frames="13" id="33" order="-1"/>
         <tile collision="1" data="" durations="100" frames="14" id="34" order="-1"/>
-        <tile collision="-1" data="" durations="100" frames="15" id="35" order="-1"/>
-        <tile collision="-1" data="" durations="100" frames="16" id="36" order="-1"/>
-        <tile collision="-1" data="" durations="100" frames="17" id="37" order="-1"/>
-        <tile collision="-1" data="" durations="100" frames="18" id="38" order="-1"/>
-        <tile collision="-1" data="" durations="100" frames="19" id="39" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="15" id="40" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="16" id="41" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="17" id="42" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="18" id="43" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="19" id="44" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="20" id="45" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="21" id="46" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="22" id="47" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="23" id="48" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="24" id="49" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="25" id="50" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="26" id="51" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="27" id="52" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="28" id="53" order="-1"/>
+        <tile collision="1" data="" durations="100" frames="29" id="54" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="30" id="55" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="31" id="56" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="32" id="57" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="33" id="58" order="-1"/>
+        <tile collision="-1" data="" durations="100" frames="34" id="59" order="-1"/>
     </tileset>
     <custom-block blocktag="custom-357" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;LimitSpeed&quot;, ~);" desc="" global="false" gui="Set Limit Speed for %0 to %1" id="357" message="LimitSpeed" name="LimitSpeed" oid="-1" return="VOID" shared="false" snippetID="178">
         <blank name="Self" order="0" type="ACTOR"/>
@@ -371,7 +389,9 @@
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Prevent" order="1" type="BOOLEAN"/>
     </custom-block>
+    <music desc="" id="480" loop="true" name="Reggae" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <music desc="" id="473" loop="true" name="Rock" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music desc="" id="481" loop="true" name="Silent Movie" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <custom-block blocktag="custom-472" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;SlowToMax&quot;, ~);" desc="" global="false" gui="Slow Down %0 To Max Speed Using Rate %1" id="472" message="SlowToMax" name="SlowToMax" oid="-1" return="VOID" shared="false" snippetID="178">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Rate" order="1" type="NUMBER"/>

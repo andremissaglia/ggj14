@@ -41,12 +41,12 @@
                                 </set-game-val-4>
                             </group>
                         </else>
-                        <scene-shout comment="false" x="37" y="291">
-                            <int id="0" val="setState"/>
-                        </scene-shout>
-                        <set-game-val-5 comment="false" x="37" y="311">
+                        <set-game-val-5 comment="false" x="37" y="291">
                             <get-val-222-4 comment="false" id="0" x="0" y="0"/>
                         </set-game-val-5>
+                        <scene-shout comment="false" x="37" y="316">
+                            <int id="0" val="setState"/>
+                        </scene-shout>
                     </group>
                     <lesseq comment="false" id="0" x="0" y="0">
                         <get-game-val-5 comment="false" id="0" x="0" y="0"/>
