@@ -112,7 +112,7 @@
     </sprite>
     <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="Simple template Actor demonstrates potential usage of Behaviors and Animations.  Please note that the Behavior Attributes are configured to work with an Actor mass of 1.0.   " eventsnippetid="221" fixedrot="true" fric="0.0" gid="0" id="432" ignoreg="false" inertia="0.01" ldamp="0.0" lw="false" mass="1.0" name="Jumper" oid="-1" pausable="true" rest="0.0" shared="false" sprite="433" static="false" touchable="true">
         <snippets>
-            <s enabled="false" id="169">
+            <s enabled="true" id="169">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val=""/>
                 <prop id="3" list="0" val="idle-r"/>
@@ -142,7 +142,7 @@
                 <prop id="2" list="0" val="0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="110">
+            <s enabled="true" id="110">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val="run"/>
                 <prop id="3" list="0" val="true"/>
@@ -157,8 +157,8 @@
                 <prop id="12" list="0" val="left"/>
                 <prop id="13" list="0" val="0.4"/>
                 <prop id="14" list="0" val="true"/>
-                <prop id="15" list="0" val="run-r"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="run-r"/>
                 <prop id="17" list="0" val="run-r"/>
                 <prop id="16" list="0" val="run-l"/>
                 <prop id="19" list="0" val="run-r"/>
@@ -183,7 +183,7 @@
                 <prop id="21" list="0" val="Jumping"/>
                 <prop id="20" list="0" val="30"/>
             </s>
-            <s enabled="false" id="108">
+            <s enabled="true" id="108">
                 <prop id="1" list="0" val="right"/>
                 <prop id="2" list="0" val="left"/>
                 <prop id="3" list="0" val="0.9"/>
@@ -206,7 +206,7 @@
                 <prop id="4" list="0" val="3"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="114">
+            <s enabled="true" id="114">
                 <prop id="1" list="0" val="0"/>
                 <prop id="2" list="0" val="false"/>
                 <prop id="3" list="0" val="fall-r"/>
@@ -215,7 +215,7 @@
                 <prop id="6" list="0" val="Falling"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="112">
+            <s enabled="true" id="112">
                 <prop id="1" list="0" val="duck"/>
                 <prop id="2" list="0" val="duck-r"/>
                 <prop id="3" list="0" val="duck-l"/>
@@ -239,7 +239,7 @@
                 <prop id="12" list="0" val="Walking"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="179">
+            <s enabled="true" id="179">
                 <prop id="2" list="0" val="false"/>
                 <prop id="3" list="0" val="false"/>
                 <prop id="4" list="0" val="false"/>
@@ -253,8 +253,8 @@
                 <prop id="12" list="0" val="250"/>
                 <prop id="13" list="0" val="65"/>
                 <prop id="14" list="0" val="jump-r"/>
-                <prop id="15" list="0" val="jump-l"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="jump-l"/>
                 <prop id="17" list="0" val="Wall Jumping"/>
                 <prop id="16" list="0" val="false"/>
             </s>
@@ -262,7 +262,7 @@
                 <prop id="1" list="0" val="false"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="180">
+            <s enabled="true" id="180">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val="false"/>
                 <prop id="3" list="0" val="false"/>
@@ -279,7 +279,7 @@
                 <prop id="14" list="0" val="Wall Sliding"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
-            <s enabled="false" id="181">
+            <s enabled="true" id="181">
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val="groundpound"/>
                 <prop id="3" list="0" val="duck"/>
