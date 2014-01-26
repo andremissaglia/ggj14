@@ -34,5 +34,12 @@
             </group>
         </step>
     </group>
+    <group eventID="1" id="1">
+        <say comment="false" x="157" y="207">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="Vidas"/>
+            <int id="2" val="subLife"/>
+        </say>
+    </group>
     <group eventID="1" id="-1"/>
 </groups>

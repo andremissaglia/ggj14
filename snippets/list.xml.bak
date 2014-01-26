@@ -33,7 +33,9 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_432" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="221" language="" name="ActorEvents_432" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Custom Event" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_222_222_Vidas" desc="" description="" design="true" drawOrder="0" id="222" language="" name="Vidas" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <number default="0.0" desc="Set the amount of time the screen will fade after falling in. In and Out will be the same." dropdown="" fullname="Fade Time" hidden="false" id="3" name="_FadeTime" order="1"/>
@@ -117,6 +119,18 @@
             <event displayName="ClearAnimCat" enabled="true" id="7" name="event-custom-block" order="7" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_236_236_LifeBar" desc="" description="" design="true" drawOrder="0" id="236" language="" name="LifeBar" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <number default="0" desc="" dropdown="" fullname="Life" hidden="false" id="1" name="_Life" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="MaxLife" hidden="false" id="2" name="_MaxLife" order="2"/>
+        <number default="1" desc="" dropdown="" fullname="Border" hidden="true" id="3" name="_Border" order="3"/>
+        <boolean default="false" desc="" dropdown="" fullname="Invulnerable" hidden="true" id="4" name="_Invulnerable" order="4"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="SetInvulnerable" enabled="true" id="2" name="event-custom" order="2" repeats="true"/>
+        </events>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_175_175_CameraFollowPlayer" desc="Makes the camera follow this Actor." description="Makes the camera follow this Actor." design="true" drawOrder="0" id="175" language="" name="Camera Follow Player" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <number default="0" desc="Horizontal Offset from the Actor" dropdown="" fullname="X Offset" hidden="false" id="1" name="_XOffset" order="1"/>
         <number default="0" desc="Vertical Offset from the Actor" dropdown="" fullname="Y Offset" hidden="false" id="2" name="_YOffset" order="2"/>
@@ -124,6 +138,49 @@
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_234_234_Damage" desc="" description="" design="true" drawOrder="0" id="234" language="" name="Damage" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actorgroup default="" desc="" dropdown="" fullname="Target" hidden="false" id="1" name="_Target" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="Damage" hidden="false" id="2" name="_Damage" order="2"/>
+        <boolean default="false" desc="" dropdown="" fullname="Broadcast" hidden="false" id="3" name="_Broadcast" order="3"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor - Group" enabled="true" id="1" name="event-collide-actortogroup" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_233_233_DieAfter" desc="" description="" design="true" drawOrder="0" id="233" language="" name="DieAfter" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <blocks/>
+        <events>
+            <event displayName="After N secs" enabled="true" id="1" name="event-delay" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.ActorEvents_488" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="232" language="" name="ActorEvents_488" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_163_163_Jumping" desc="This Behavior controls the player's jumping." description="This Behavior controls the player's jumping." design="true" drawOrder="0" id="163" language="" name="Jumping" oid="-1" package="" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="Key Released?" hidden="true" id="1" name="_KeyReleased" order="1"/>
+        <boolean default="false" desc="" dropdown="" fullname="Can Jump?" hidden="false" id="2" name="_CanJump" order="2"/>
+        <control default="" desc="Select the key used for jumping." dropdown="" fullname="Jump Key" hidden="false" id="3" name="_JumpKey" order="3"/>
+        <number default="0.075" desc="Maximum amount of time that the&lt;br&gt;&#10;jump force will be applied when holding down the jump button.&lt;br&gt;&lt;br&gt;&#10;default = 0.075" dropdown="" fullname="Max Jump Time" hidden="false" id="8" name="_MaxJumpTime" order="5"/>
+        <animation default="" desc="Animation used for jumping to the right." dropdown="" fullname="Jump Right Animation" hidden="false" id="12" name="_JumpRightAnimation" order="7"/>
+        <animation default="" desc="Animation used for jumping to the left." dropdown="" fullname="Jump Left Animation" hidden="false" id="13" name="_JumpLeftAnimation" order="8"/>
+        <boolean default="false" desc="" dropdown="" fullname="Prevent Jumping?" hidden="true" id="14" name="_PreventJumping" order="9"/>
+        <number default="0" desc="" dropdown="" fullname="Elapsed Jump Time" hidden="true" id="15" name="_ElapsedJumpTime" order="10"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0" desc="" dropdown="" fullname="oldY" hidden="true" id="17" name="_oldY" order="12"/>
+        <number default="0.0" desc="" dropdown="" fullname="Current Jump Time" hidden="true" id="16" name="_CurrentJumpTime" order="11"/>
+        <sound default="" desc="Sound to play when jumping." dropdown="" fullname="Jump Sound" hidden="false" id="19" name="_JumpSound" order="13"/>
+        <number default="0.75" desc="When releasing the jump key before reaching the max&lt;br&gt;&#10;height, what is the rate of upward slowdown?&lt;br&gt;&lt;br&gt;&#10;default = 0.75" dropdown="" fullname="Jumping Slowdown" hidden="false" id="18" name="_JumpingSlowdown" order="6"/>
+        <text default="Jumping" desc="Set the category used for the animation - used for the hierarchy." dropdown="" fullname="Animation Category" hidden="false" id="21" name="_AnimationCategory" order="14"/>
+        <number default="35.0" desc="Amount of force applied when jumping.&lt;br&gt;&#10;Default = 35" dropdown="" fullname="Jump Force" hidden="false" id="20" name="_JumpForce" order="4"/>
+        <blocks/>
+        <events>
+            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_110_110_Running" desc="This Behavior controls the player's ability to run.  The Walking Behavior must also be attached for this Behavior to work properly." description="This Behavior controls the player's ability to run.  The Walking Behavior must also be attached for this Behavior to work properly." design="true" drawOrder="0" id="110" language="" name="Running" oid="-1" package="" scenespecific="false" shared="false" type="actor">
@@ -152,101 +209,45 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_163_163_Jumping" desc="This Behavior controls the player's jumping." description="This Behavior controls the player's jumping." design="true" drawOrder="0" id="163" language="" name="Jumping" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <boolean default="false" desc="" dropdown="" fullname="Key Released?" hidden="true" id="1" name="_KeyReleased" order="1"/>
-        <boolean default="false" desc="" dropdown="" fullname="Can Jump?" hidden="false" id="2" name="_CanJump" order="2"/>
-        <control default="" desc="Select the key used for jumping." dropdown="" fullname="Jump Key" hidden="false" id="3" name="_JumpKey" order="3"/>
-        <number default="0.075" desc="Maximum amount of time that the&lt;br&gt;&#10;jump force will be applied when holding down the jump button.&lt;br&gt;&lt;br&gt;&#10;default = 0.075" dropdown="" fullname="Max Jump Time" hidden="false" id="8" name="_MaxJumpTime" order="5"/>
-        <animation default="" desc="Animation used for jumping to the right." dropdown="" fullname="Jump Right Animation" hidden="false" id="12" name="_JumpRightAnimation" order="7"/>
-        <animation default="" desc="Animation used for jumping to the left." dropdown="" fullname="Jump Left Animation" hidden="false" id="13" name="_JumpLeftAnimation" order="8"/>
-        <boolean default="false" desc="" dropdown="" fullname="Prevent Jumping?" hidden="true" id="14" name="_PreventJumping" order="9"/>
-        <number default="0" desc="" dropdown="" fullname="Elapsed Jump Time" hidden="true" id="15" name="_ElapsedJumpTime" order="10"/>
+    <snippet attachedevent="false" class="scripts.Design_231_231_MeleeAttack" desc="This behavior attaches to a player allowing you to swing a melee weapon.&lt;br&gt;You can select the player's animations for idling, moving, and in-air attacks, choose the weapon actor and set the weapon offset.&lt;br&gt;&lt;br&gt;&#10;This is a heavily modified version of the nonworking &quot;Sword Attack&quot; behavior that was uploaded to the StencylForge by 'cesarmoy' on Dec. 29, 2012.&#10;&lt;br&gt;It's my first behavior and upload, so please let me know if there's something that I've done wrong, or if there are ways to optimize this." description="This behavior attaches to a player allowing you to swing a melee weapon.&lt;br&gt;You can select the player's animations for idling, moving, and in-air attacks, choose the weapon actor and set the weapon offset.&lt;br&gt;&lt;br&gt;&#10;This is a heavily modified version of the nonworking &quot;Sword Attack&quot; behavior that was uploaded to the StencylForge by 'cesarmoy' on Dec. 29, 2012.&#10;&lt;br&gt;It's my first behavior and upload, so please let me know if there's something that I've done wrong, or if there are ways to optimize this." design="true" drawOrder="0" id="231" language="" name="Melee Attack" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="Attacking" hidden="true" id="1" name="_Attacking" order="3"/>
+        <actor default="0" desc="" dropdown="" fullname="Sword" hidden="true" id="2" name="_Sword" order="1"/>
+        <boolean default="false" desc="" dropdown="" fullname="Knocking Back" hidden="true" id="8" name="_KnockingBack" order="2"/>
+        <number default="24.0" desc="Set how many pixels left and right to adjust by, relative to the Players center position.&#10;&lt;br&gt;&lt;b&gt;Greater negative numbers move the sword left." dropdown="" fullname="X Offset for RIGHT" hidden="false" id="15" name="_XOffsetforRIGHT" order="7"/>
         <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <number default="0" desc="" dropdown="" fullname="oldY" hidden="true" id="17" name="_oldY" order="12"/>
-        <number default="0.0" desc="" dropdown="" fullname="Current Jump Time" hidden="true" id="16" name="_CurrentJumpTime" order="11"/>
-        <sound default="" desc="Sound to play when jumping." dropdown="" fullname="Jump Sound" hidden="false" id="19" name="_JumpSound" order="13"/>
-        <number default="0.75" desc="When releasing the jump key before reaching the max&lt;br&gt;&#10;height, what is the rate of upward slowdown?&lt;br&gt;&lt;br&gt;&#10;default = 0.75" dropdown="" fullname="Jumping Slowdown" hidden="false" id="18" name="_JumpingSlowdown" order="6"/>
-        <text default="Jumping" desc="Set the category used for the animation - used for the hierarchy." dropdown="" fullname="Animation Category" hidden="false" id="21" name="_AnimationCategory" order="14"/>
-        <number default="35.0" desc="Amount of force applied when jumping.&lt;br&gt;&#10;Default = 35" dropdown="" fullname="Jump Force" hidden="false" id="20" name="_JumpForce" order="4"/>
+        <number default="-24.0" desc="Set how many pixels left and right to adjust by, relative to the Players center position.&#10;&lt;br&gt;&lt;b&gt;Greater negative numbers move the sword left." dropdown="" fullname="X Offset for LEFT" hidden="false" id="17" name="_XOffsetforLEFT" order="9"/>
+        <number default="14.0" desc="Set how many pixels left and right to adjust by, relative to the Players center position.&#10;&lt;br&gt;&lt;b&gt;Greater negative numbers move the sword up." dropdown="" fullname="Y Offset for RIGHT" hidden="false" id="16" name="_YOffsetforRIGHT" order="8"/>
+        <number default="14.0" desc="Set how many pixels left and right to adjust by, relative to the Players center position.&#10;&lt;br&gt;&lt;b&gt;Greater negative numbers move the sword up." dropdown="" fullname="Y Offset for LEFT" hidden="false" id="18" name="_YOffsetforLEFT" order="10"/>
+        <control default="" desc="Select the control used for attacking." dropdown="" fullname="Attack Control" hidden="false" id="21" name="_AttackControl" order="5"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is Idle, facing Left." dropdown="" fullname="Attack Idle Left" hidden="false" id="23" name="_AttackIdleLeft" order="28"/>
+        <boolean default="false" desc="" dropdown="" fullname="Can Attack" hidden="true" id="22" name="_CanAttack" order="4"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is Idle, facing Right." dropdown="" fullname="Attack Idle Right" hidden="false" id="26" name="_AttackIdleRight" order="21"/>
+        <animation default="" desc="The character animation that is used when the character is Idle, facing Right." dropdown="" fullname="Idle Right" hidden="false" id="31" name="_IdleRight" order="17"/>
+        <animation default="" desc="The character animation that is used when the character is Idle, facing Left." dropdown="" fullname="Idle Left" hidden="false" id="30" name="_IdleLeft" order="24"/>
+        <animation default="" desc="The character animation that is used when the character is Jumping, facing Left." dropdown="" fullname="Jump Left" hidden="false" id="34" name="_JumpLeft" order="26"/>
+        <animation default="" desc="The character animation that is used when the character is Jumping, facing Right." dropdown="" fullname="Jump Right" hidden="false" id="35" name="_JumpRight" order="19"/>
+        <actortype default="" desc="The weapon that will be used for the weapon animations." dropdown="" fullname="Weapon Type" hidden="false" id="36" name="_WeaponType" order="6"/>
+        <animation default="" desc="The character animation that is used when the character is Moving, facing Left." dropdown="" fullname="Move Left" hidden="false" id="43" name="_MoveLeft" order="25"/>
+        <animation default="" desc="The character animation that is used when the character is Moving, facing Right." dropdown="" fullname="Move Right" hidden="false" id="46" name="_MoveRight" order="18"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is Moving, facing Right." dropdown="" fullname="Attack Move Right" hidden="false" id="47" name="_AttackMoveRight" order="22"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is Moving, facing Left." dropdown="" fullname="Attack Move Left" hidden="false" id="45" name="_AttackMoveLeft" order="29"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Idle Left animation." dropdown="" fullname="Weapon Animation Idle Left" hidden="false" id="51" name="_WeaponAnimationIdleLeft" order="14"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Jump Right animation." dropdown="" fullname="Weapon Animation Jump Right" hidden="false" id="50" name="_WeaponAnimationJumpRight" order="13"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Move Right animation." dropdown="" fullname="Weapon Animation Move Right" hidden="false" id="49" name="_WeaponAnimationMoveRight" order="12"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Idle Right animation." dropdown="" fullname="Weapon Animation Idle Right" hidden="false" id="48" name="_WeaponAnimationIdleRight" order="11"/>
+        <animation default="" desc="The character animation that is used when the character is Falling, facing Right." dropdown="" fullname="Falling Right" hidden="false" id="55" name="_FallingRight" order="20"/>
+        <animation default="" desc="The character animation that is used when the character is Falling, facing Left." dropdown="" fullname="Falling Left" hidden="false" id="54" name="_FallingLeft" order="27"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Jump Left animation." dropdown="" fullname="Weapon Animation Jump Left" hidden="false" id="53" name="_WeaponAnimationJumpLeft" order="16"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Move Left animation." dropdown="" fullname="Weapon Animation Move Left" hidden="false" id="52" name="_WeaponAnimationMoveLeft" order="15"/>
+        <boolean default="false" desc="Turn this on if you want to see logging in the console." dropdown="" fullname="Debug" hidden="false" id="58" name="_Debug" order="31"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is In the Air, facing Right." dropdown="" fullname="Attack In Air Right" hidden="false" id="57" name="_AttackInAirRight" order="23"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is in the Air, facing Left." dropdown="" fullname="Attack In Air Left" hidden="false" id="56" name="_AttackInAirLeft" order="30"/>
         <blocks/>
         <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
-        </events>
-    </snippet>
-    <snippet attachedevent="false" class="scripts.Design_230_230_MeleeAttack" desc="This behavior will enable the actor to make a melee attack while on ground.&lt;br&gt;&#10;&lt;br&gt;&#10;If the actor has the behaviors Combat Statistics, values such as minimum, maximum attack and damage type will be used from those behaviors. Otherwise, it will use the values filled in this behavior." description="This behavior will enable the actor to make a melee attack while on ground.&lt;br&gt;&#10;&lt;br&gt;&#10;If the actor has the behaviors Combat Statistics, values such as minimum, maximum attack and damage type will be used from those behaviors. Otherwise, it will use the values filled in this behavior." design="true" drawOrder="0" id="230" language="" name="Melee Attack" oid="-1" package="" scenespecific="false" shared="false" type="actor">
-        <text default="" desc="" dropdown="" fullname="Weapon Type" hidden="true" id="1" name="_WeaponType" order="1"/>
-        <control default="" desc="" dropdown="" fullname="Attack" hidden="false" id="2" name="_Attack" order="2"/>
-        <boolean default="false" desc="" dropdown="" fullname="Is Attacking" hidden="true" id="3" name="_IsAttacking" order="5"/>
-        <actortype default="" desc="This is the actor that will inflict damage." dropdown="" fullname="Damager Type" hidden="false" id="5" name="_DamagerType" order="6"/>
-        <actor default="" desc="" dropdown="" fullname="Damager" hidden="true" id="6" name="_Damager" order="7"/>
-        <boolean default="false" desc="" dropdown="" fullname="Facing Right" hidden="true" id="7" name="_FacingRight" order="11"/>
-        <number default="0.0" desc="Y Offset of the damager." dropdown="" fullname="Y Offset" hidden="false" id="8" name="_YOffset" order="14"/>
-        <number default="0.0" desc="X Offset right of the damager." dropdown="" fullname="X Right Offset" hidden="false" id="9" name="_XRightOffset" order="12"/>
-        <number default="0.0" desc="X Offset left of the damager." dropdown="" fullname="X Left Offset" hidden="false" id="10" name="_XLeftOffset" order="13"/>
-        <number default="0.0" desc="The time stopped after the attack." dropdown="" fullname="Delay" hidden="false" id="11" name="_Delay" order="16"/>
-        <number default="0.0" desc="Maximum Damage. Ignore this if this actor has the behavior Combat Statistics." dropdown="" fullname="Maximum Attack" hidden="false" id="14" name="_MaximumAttack" order="17"/>
-        <number default="0.0" desc="Minimum Damage. Ignore this if this actor has the behavior Combat Statistics." dropdown="" fullname="Minimum Attack" hidden="false" id="15" name="_MinimumAttack" order="18"/>
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <boolean default="false" desc="" dropdown="" fullname="Is Wall Running" hidden="true" id="16" name="_IsWallRunning" order="26"/>
-        <boolean default="false" desc="" dropdown="" fullname="Stun" hidden="true" id="19" name="_Stun" order="28"/>
-        <number default="0.0" desc="" dropdown="" fullname="Controllable" hidden="true" id="18" name="_Controllable" order="27"/>
-        <text default="Damage" desc="The behavior responsible for inflicting damage. It's the one attached to the Damager Type actor." dropdown="" fullname="Damage Behavior" hidden="false" id="21" name="_DamageBehavior" order="8"/>
-        <number default="0.0" desc="Time before the actual attack. It's used to synchronize the animation with the attack. A proper value would be the time required to the animation reach the frame when the attack happens." dropdown="" fullname="Wait" hidden="false" id="20" name="_Wait" order="15"/>
-        <text default="" desc="Damage type this attack will inflict." dropdown="" fullname="Damage Type" hidden="false" id="23" name="_DamageType" order="19"/>
-        <boolean default="false" desc="" dropdown="" fullname="Add Effect?" hidden="true" id="26" name="_AddEffect" order="30"/>
-        <number default="0" desc="" dropdown="" fullname="X Damager" hidden="true" id="29" name="_XDamager" order="32"/>
-        <boolean default="false" desc="" dropdown="" fullname="Is Ducking" hidden="true" id="31" name="_IsDucking" order="34"/>
-        <number default="0" desc="" dropdown="" fullname="Y Damager" hidden="true" id="30" name="_YDamager" order="33"/>
-        <text default="" desc="The name of the animation of the damager facing left.[Optional]" dropdown="" fullname="Damager Animation Left" hidden="false" id="34" name="_DamagerAnimationLeft" order="10"/>
-        <sound default="" desc="Sound to play when this actor attacks." dropdown="" fullname="Attack Sound" hidden="false" id="35" name="_AttackSound" order="3"/>
-        <text default="" desc="The name of the animation of the damager facing right.[Optional]" dropdown="" fullname="Damager Animation Right" hidden="false" id="33" name="_DamagerAnimationRight" order="9"/>
-        <boolean default="false" desc="" dropdown="" fullname="Is Wall Sliding" hidden="true" id="38" name="_IsWallSliding" order="36"/>
-        <animation default="" desc="" dropdown="" fullname="Melee Right" hidden="false" id="39" name="_MeleeRight" order="38"/>
-        <boolean default="false" desc="" dropdown="" fullname="On Ground" hidden="true" id="36" name="_OnGround" order="35"/>
-        <boolean default="false" desc="If checked, the actor will stop moving when attacking." dropdown="" fullname="Stop When Attacking?" hidden="false" id="37" name="_StopWhenAttacking" order="4"/>
-        <animation default="" desc="" dropdown="" fullname="Melee Left" hidden="false" id="40" name="_MeleeLeft" order="39"/>
-        <list default="list" desc="" dropdown="" fullname="Status to Add List" hidden="true" id="47" name="_StatustoAddList" order="31"/>
-        <boolean default="false" desc="If checked, the damager will use this actor's coordinates to select the direction to apply knockback." dropdown="" fullname="Use attacker's coordinates?" hidden="false" id="51" name="_Useattackerscoordinates" order="23"/>
-        <number default="0" desc="" dropdown="" fullname="Knockback Y" hidden="false" id="50" name="_KnockbackY" order="25"/>
-        <number default="0" desc="" dropdown="" fullname="Knockback X" hidden="false" id="49" name="_KnockbackX" order="24"/>
-        <boolean default="false" desc="Will push the attacked actor. Will only work if the attacked actor has the behavior Damage Knockback." dropdown="" fullname="Apply Knockback?" hidden="false" id="48" name="_ApplyKnockback" order="22"/>
-        <list default="list" desc="All the behaviors on this list will be disabled while the actor is attacking with this behavior." dropdown="" fullname="Behaviors to Disable" hidden="false" id="55" name="_BehaviorstoDisable" order="43"/>
-        <number default="0" desc="" dropdown="" fullname="Current Health" hidden="true" id="54" name="_CurrentHealth" order="41"/>
-        <boolean default="false" desc="" dropdown="" fullname="Is Using Skill" hidden="true" id="53" name="_IsUsingSkill" order="40"/>
-        <text default="" desc="" dropdown="" fullname="Enemy" hidden="true" id="52" name="_Enemy" order="37"/>
-        <text default="" desc="" dropdown="" fullname="Equipped Weapon" hidden="true" id="59" name="_EquippedWeapon" order="45"/>
-        <list default="list" desc="List of weapon types that can use this behavior to attack." dropdown="" fullname="Usable Weapon Types" hidden="false" id="57" name="_UsableWeaponTypes" order="42"/>
-        <boolean default="false" desc="" dropdown="" fullname="Is Dashing" hidden="true" id="56" name="_IsDashing" order="44"/>
-        <number default="2.0" desc="If it's a critical hit, the damage will be multiplied by this value." dropdown="" fullname="Critical Multiplier" hidden="false" id="63" name="_CriticalMultiplier" order="21"/>
-        <number default="0.0" desc="Chance of dealing a criticla hit. It's a percentage value. If the actor has the behavior Combat Statistics, the value will be get from that behavior." dropdown="" fullname="Critical Rate" hidden="false" id="62" name="_CriticalRate" order="20"/>
-        <text default="" desc="" dropdown="" fullname="Attacking Behavior" hidden="true" id="61" name="_AttackingBehavior" order="47"/>
-        <text default="" desc="" dropdown="" fullname="This Behavior" hidden="true" id="60" name="_ThisBehavior" order="46"/>
-        <boolean default="false" desc="If checked, it will change the damager type based on the equipped weapon." dropdown="" fullname="Damager by Weapon?" hidden="false" id="71" name="_DamagerbyWeapon" order="48"/>
-        <text default="" desc="" dropdown="" fullname="Damager Name" hidden="true" id="65" name="_DamagerName" order="51"/>
-        <list default="list" desc="List to hold all the values for each weapon's attack. Fill with the parameters in orther, separated by a comma.&lt;br&gt;&#10;Parameters: Equipped Weapon, Damager Name, Facing Right X Offset, Facing Left X Offset, Y Offset, Damage Behavior Name, Attack Animation Right, Attack Animation Left, Damager Animation Right, Damager Animation Left,  Wait Time, Delay Time,Stop When Attacking (true or false)&lt;br&gt;&lt;br&gt;&#10;If Select Mode is set to Weapon Type, replace equipped weapon with the weapon type.&lt;br&gt;&#10;Example:&lt;br&gt;&#10;Iron Sword,Iron Damager,10,0,3,Area Damage,Attack Right,Attack Left,0.4,0.2,true" dropdown="" fullname="Weapons List" hidden="false" id="67" name="_WeaponsList" order="52"/>
-        <number default="0" desc="" dropdown="" fullname="Delay Ticks" hidden="true" id="72" name="_DelayTicks" order="53"/>
-        <text default="" desc="Pick when to set the attack properties:&lt;br&gt;&#10;Weapon Name:  set by weapon name.&lt;br&gt;&#10;Weapon Type: set by weapon type." dropdown="Weapon Name=Weapon Name&#10;Weapon Type=Weapon Type" fullname="Select Mode" hidden="false" id="73" name="_SelectMode" order="49"/>
-        <text default="" desc="Name of the equipment slot where the weapon is equipped." dropdown="" fullname="Weapon Slot" hidden="false" id="74" name="_WeaponSlot" order="50"/>
-        <blocks>
-            <receiver blockID="97" id="1"/>
-            <receiver blockID="98" id="2"/>
-            <receiver blockID="97" id="3"/>
-            <receiver blockID="99" id="4"/>
-            <receiver blockID="99" id="5"/>
-            <receiver blockID="100" id="6"/>
-            <receiver blockID="99" id="7"/>
-            <receiver blockID="123" id="8"/>
-            <receiver blockID="206" id="9"/>
-        </blocks>
-        <events>
-            <event displayName="Created" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Updated" enabled="true" id="2" name="step" order="2" repeats="true"/>
-            <event displayName="Get" enabled="true" id="3" name="event-custom" order="3" repeats="true"/>
-            <event displayName="Attack" enabled="true" id="4" name="event-custom" order="4" repeats="true"/>
-            <event displayName="AddEffect" enabled="true" id="5" name="event-custom" order="5" repeats="true"/>
-            <event displayName="HandleAnimations" enabled="true" id="6" name="event-custom" order="6" repeats="true"/>
-            <event displayName="StopAttack" enabled="true" id="7" name="event-custom" order="7" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="4" repeats="true"/>
+            <event displayName="tookDamage" enabled="true" id="3" name="event-custom" order="7" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="6" name="step" order="3" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="8" name="step" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_229_229_ChangeState" desc="" description="" design="true" drawOrder="0" id="229" language="" name="ChangeState" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
@@ -306,7 +307,9 @@
     </snippet>
     <snippet attachedevent="true" class="scripts.ActorEvents_477" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="225" language="" name="ActorEvents_477" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Custom Event" enabled="true" id="1" name="event-custom" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_224_224_NextLevel" desc="" description="" design="true" drawOrder="0" id="224" language="" name="NextLevel" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <scene default="" desc="" dropdown="" fullname="NextScene" hidden="false" id="1" name="_NextScene" order="1"/>

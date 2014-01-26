@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-collide-actortogroup comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="1" id="-1">
+                        <set-attribute comment="false" x="37" y="90">
+                            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="LifeBar"/>
+                            <int id="2" val="_Life"/>
+                            <minus comment="false" id="3" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="LifeBar"/>
+                                    <int id="2" val="_Life"/>
+                                </get-attribute>
+                                <get-val-234-2 comment="false" id="1" x="0" y="0"/>
+                            </minus>
+                        </set-attribute>
+                        <say comment="false" x="37" y="140">
+                            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="LifeBar"/>
+                            <int id="2" val="SetInvulnerable"/>
+                        </say>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-attribute comment="false" id="0" x="0" y="0">
+                            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="LifeBar"/>
+                            <int id="2" val="Invulnerable"/>
+                        </get-attribute>
+                    </not>
+                </if>
+                <if comment="false" x="26" y="184">
+                    <group eventID="1" id="-1">
+                        <shout comment="false" x="37" y="227">
+                            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="Die"/>
+                        </shout>
+                        <if comment="false" x="37" y="259">
+                            <group eventID="1" id="-1">
+                                <say comment="false" x="48" y="284">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="SongChange"/>
+                                        <int id="1" val="_Player"/>
+                                    </scene-get-attribute>
+                                    <int id="1" val="Melee Attack"/>
+                                    <int id="2" val="tookDamage"/>
+                                </say>
+                            </group>
+                            <get-val-234-3 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-attribute comment="false" id="0" x="0" y="0">
+                            <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="LifeBar"/>
+                            <int id="2" val="_Life"/>
+                        </get-attribute>
+                        <int id="1" val="1"/>
+                    </less>
+                </if>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <get-val-234-1 comment="false" id="1" x="0" y="0"/>
+        </event-collide-actortogroup>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
