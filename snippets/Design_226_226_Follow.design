@@ -1,2 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<groups/>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="215" y="141">
+            <group eventID="1" id="-1">
+                <if comment="false" x="226" y="166">
+                    <group eventID="1" id="-1">
+                        <set-dxy comment="false" x="237" y="209">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <get-val-226-2 comment="false" id="2" x="0" y="0"/>
+                        </set-dxy>
+                        <setanim comment="false" x="237" y="241">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-226-4 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-xy comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                        <get-xy comment="false" id="1" x="0" y="0">
+                            <get-val-226-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </get-xy>
+                    </less>
+                </if>
+                <else comment="false" x="226" y="285">
+                    <group eventID="1" id="-1">
+                        <set-dxy comment="false" x="237" y="305">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <neg comment="false" id="2" x="0" y="0">
+                                <get-val-226-2 comment="false" id="0" x="0" y="0"/>
+                            </neg>
+                        </set-dxy>
+                        <setanim comment="false" x="237" y="342">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-226-3 comment="false" id="1" x="0" y="0"/>
+                        </setanim>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="73">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="98">
+                                    <group eventID="2" id="-1">
+                                        <recycle comment="false" x="59" y="123">
+                                            <ACTOR eid="var" id="0" vid="2"/>
+                                        </recycle>
+                                        <set-val-231-1 comment="false" x="59" y="150">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-231-1>
+                                        <clear comment="false" x="59" y="175">
+                                            <int id="0" val="2"/>
+                                        </clear>
+                                    </group>
+                                    <get-val-231-1 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <if comment="false" x="48" y="214">
+                                    <group eventID="-1" id="-1">
+                                        <if comment="false" x="59" y="252">
+                                            <group eventID="2" id="-1">
+                                                <print comment="false" x="70" y="277">
+                                                    <int id="0" val="Attack Idle Right"/>
+                                                </print>
+                                            </group>
+                                            <get-val-231-58 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <setanim comment="false" x="59" y="309">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-231-26 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                        <create-recycled-actor comment="false" x="59" y="341">
+                                            <ACTORTYPE eid="var" id="0" vid="36"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <get-val-231-15 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <get-val-231-16 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="3" val="0"/>
+                                        </create-recycled-actor>
+                                        <set-val-231-2 comment="false" x="59" y="386">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                        </set-val-231-2>
+                                        <setanim comment="false" x="59" y="413">
+                                            <ACTOR eid="this" id="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <get-val-231-48 comment="false" id="0" x="0" y="0"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                        <backforward comment="false" x="59" y="450">
+                                            <ACTOR eid="var" id="0" vid="2"/>
+                                            <int id="1" val="0"/>
+                                        </backforward>
+                                        <set-val-231-1 comment="false" x="59" y="477">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-231-1>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <getanim comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getanim>
+                                        <get-val-231-31 comment="false" id="1" x="0" y="0"/>
+                                    </eq>
+                                </if>
+                                <if comment="false" x="48" y="514">
+                                    <group eventID="-1" id="-1">
+                                        <if comment="false" x="59" y="552">
+                                            <group eventID="2" id="-1">
+                                                <print comment="false" x="70" y="577">
+                                                    <int id="0" val="Attack Idle Left"/>
+                                                </print>
+                                            </group>
+                                            <get-val-231-58 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <setanim comment="false" x="59" y="609">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-231-23 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                        <set-val-231-1 comment="false" x="59" y="641">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-231-1>
+                                        <create-recycled-actor comment="false" x="59" y="666">
+                                            <ACTORTYPE eid="var" id="0" vid="36"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <get-val-231-17 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <get-val-231-18 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="3" val="0"/>
+                                        </create-recycled-actor>
+                                        <set-val-231-2 comment="false" x="59" y="711">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                        </set-val-231-2>
+                                        <setanim comment="false" x="59" y="738">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <get-val-231-51 comment="false" id="0" x="0" y="0"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                        <backforward comment="false" x="59" y="775">
+                                            <ACTOR eid="var" id="0" vid="2"/>
+                                            <int id="1" val="0"/>
+                                        </backforward>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <getanim comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getanim>
+                                        <get-val-231-30 comment="false" id="1" x="0" y="0"/>
+                                    </eq>
+                                </if>
+                                <if comment="false" x="48" y="814">
+                                    <group eventID="-1" id="-1">
+                                        <if comment="false" x="59" y="852">
+                                            <group eventID="2" id="-1">
+                                                <print comment="false" x="70" y="877">
+                                                    <int id="0" val="Attack Move Right"/>
+                                                </print>
+                                            </group>
+                                            <get-val-231-58 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <setanim comment="false" x="59" y="909">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-231-47 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                        <create-recycled-actor comment="false" x="59" y="941">
+                                            <ACTORTYPE eid="var" id="0" vid="36"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <get-val-231-15 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <get-val-231-16 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="3" val="0"/>
+                                        </create-recycled-actor>
+                                        <set-val-231-2 comment="false" x="59" y="986">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                        </set-val-231-2>
+                                        <setanim comment="false" x="59" y="1013">
+                                            <ACTOR eid="this" id="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <get-val-231-49 comment="false" id="0" x="0" y="0"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                        <backforward comment="false" x="59" y="1050">
+                                            <ACTOR eid="var" id="0" vid="2"/>
+                                            <int id="1" val="0"/>
+                                        </backforward>
+                                        <set-val-231-1 comment="false" x="59" y="1077">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-231-1>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <getanim comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getanim>
+                                        <get-val-231-46 comment="false" id="1" x="0" y="0"/>
+                                    </eq>
+                                </if>
+                                <if comment="false" x="48" y="1114">
+                                    <group eventID="-1" id="-1">
+                                        <if comment="false" x="59" y="1152">
+                                            <group eventID="2" id="-1">
+                                                <print comment="false" x="70" y="1177">
+                                                    <int id="0" val="Attack Move Left"/>
+                                                </print>
+                                            </group>
+                                            <get-val-231-58 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <setanim comment="false" x="59" y="1209">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-231-45 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                        <set-val-231-1 comment="false" x="59" y="1241">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-231-1>
+                                        <create-recycled-actor comment="false" x="59" y="1266">
+                                            <ACTORTYPE eid="var" id="0" vid="36"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <get-val-231-17 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <get-val-231-18 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="3" val="0"/>
+                                        </create-recycled-actor>
+                                        <set-val-231-2 comment="false" x="59" y="1311">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                        </set-val-231-2>
+                                        <setanim comment="false" x="59" y="1338">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <get-val-231-52 comment="false" id="0" x="0" y="0"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                        <backforward comment="false" x="59" y="1375">
+                                            <ACTOR eid="var" id="0" vid="2"/>
+                                            <int id="1" val="0"/>
+                                        </backforward>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <getanim comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getanim>
+                                        <get-val-231-43 comment="false" id="1" x="0" y="0"/>
+                                    </eq>
+                                </if>
+                                <if comment="false" x="48" y="1414">
+                                    <group eventID="-1" id="-1">
+                                        <if comment="false" x="59" y="1457">
+                                            <group eventID="2" id="-1">
+                                                <print comment="false" x="70" y="1482">
+                                                    <int id="0" val="Attack In Air Right"/>
+                                                </print>
+                                            </group>
+                                            <get-val-231-58 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <setanim comment="false" x="59" y="1514">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-231-57 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                        <create-recycled-actor comment="false" x="59" y="1546">
+                                            <ACTORTYPE eid="var" id="0" vid="36"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <get-val-231-15 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <get-val-231-16 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="3" val="0"/>
+                                        </create-recycled-actor>
+                                        <set-val-231-2 comment="false" x="59" y="1591">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                        </set-val-231-2>
+                                        <setanim comment="false" x="59" y="1618">
+                                            <ACTOR eid="this" id="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <get-val-231-50 comment="false" id="0" x="0" y="0"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                        <backforward comment="false" x="59" y="1655">
+                                            <ACTOR eid="var" id="0" vid="2"/>
+                                            <int id="1" val="0"/>
+                                        </backforward>
+                                        <set-val-231-1 comment="false" x="59" y="1682">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-231-1>
+                                    </group>
+                                    <or comment="false" id="0" x="0" y="0">
+                                        <eq comment="false" id="0" x="0" y="0">
+                                            <getanim comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                            </getanim>
+                                            <get-val-231-35 comment="false" id="1" x="0" y="0"/>
+                                        </eq>
+                                        <eq comment="false" id="1" x="0" y="0">
+                                            <getanim comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                            </getanim>
+                                            <get-val-231-55 comment="false" id="1" x="0" y="0"/>
+                                        </eq>
+                                    </or>
+                                </if>
+                                <if comment="false" x="48" y="1719">
+                                    <group eventID="-1" id="-1">
+                                        <if comment="false" x="59" y="1762">
+                                            <group eventID="2" id="-1">
+                                                <print comment="false" x="70" y="1787">
+                                                    <int id="0" val="Attack In Air Left"/>
+                                                </print>
+                                            </group>
+                                            <get-val-231-58 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <setanim comment="false" x="59" y="1819">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-231-56 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                        <set-val-231-1 comment="false" x="59" y="1851">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-231-1>
+                                        <create-recycled-actor comment="false" x="59" y="1876">
+                                            <ACTORTYPE eid="var" id="0" vid="36"/>
+                                            <plus comment="false" id="1" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="0"/>
+                                                </get-xy>
+                                                <get-val-231-17 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                </get-xy>
+                                                <get-val-231-18 comment="false" id="1" x="0" y="0"/>
+                                            </plus>
+                                            <int id="3" val="0"/>
+                                        </create-recycled-actor>
+                                        <set-val-231-2 comment="false" x="59" y="1921">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                        </set-val-231-2>
+                                        <setanim comment="false" x="59" y="1948">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <get-val-231-53 comment="false" id="0" x="0" y="0"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                        <backforward comment="false" x="59" y="1985">
+                                            <ACTOR eid="var" id="0" vid="2"/>
+                                            <int id="1" val="0"/>
+                                        </backforward>
+                                    </group>
+                                    <or comment="false" id="0" x="0" y="0">
+                                        <eq comment="false" id="0" x="0" y="0">
+                                            <getanim comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                            </getanim>
+                                            <get-val-231-34 comment="false" id="1" x="0" y="0"/>
+                                        </eq>
+                                        <eq comment="false" id="1" x="0" y="0">
+                                            <getanim comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                            </getanim>
+                                            <get-val-231-54 comment="false" id="1" x="0" y="0"/>
+                                        </eq>
+                                    </or>
+                                </if>
+                            </group>
+                            <get-val-231-22 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <CONTROL eid="var" id="1" vid="21"/>
+                    </keystate>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-231-8 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-231-8>
+                <recycle comment="false" x="26" y="65">
+                    <ACTOR eid="var" id="0" vid="2"/>
+                </recycle>
+                <dolater comment="false" x="26" y="92">
+                    <group eventID="-1" id="-1">
+                        <set-val-231-8 comment="false" x="37" y="119">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-231-8>
+                    </group>
+                    <int id="0" val="0.5"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+            <int id="0" val="tookDamage"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="6" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="6" id="-1">
+                        <set-val-231-22 comment="false" x="37" y="70">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-231-22>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-231-8 comment="false" id="0" x="0" y="0"/>
+                        <true comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="107">
+                    <group eventID="6" id="-1">
+                        <set-val-231-22 comment="false" x="37" y="127">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-231-22>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="8" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="8" id="-1">
+                        <if comment="false" x="37" y="73">
+                            <group eventID="8" id="-1">
+                                <recycle comment="false" x="48" y="111">
+                                    <ACTOR eid="var" id="0" vid="2"/>
+                                </recycle>
+                                <set-val-231-1 comment="false" x="48" y="138">
+                                    <false comment="false" id="0" x="0" y="0"/>
+                                </set-val-231-1>
+                                <clear comment="false" x="48" y="163">
+                                    <int id="0" val="2"/>
+                                </clear>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <is-anim comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="2"/>
+                                </is-anim>
+                            </not>
+                        </if>
+                        <else comment="false" x="37" y="202">
+                            <group eventID="8" id="-1">
+                                <set-dxy comment="false" x="48" y="222">
+                                    <ACTOR eid="var" id="0" vid="2"/>
+                                    <int id="1" val="0"/>
+                                    <get-dxy comment="false" id="2" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="0"/>
+                                    </get-dxy>
+                                </set-dxy>
+                                <set-dxy comment="false" x="48" y="262">
+                                    <ACTOR eid="var" id="0" vid="2"/>
+                                    <int id="1" val="1"/>
+                                    <get-dxy comment="false" id="2" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="1"/>
+                                    </get-dxy>
+                                </set-dxy>
+                            </group>
+                        </else>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="2"/>
+                        <int id="1" val="0"/>
+                    </value>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="8" id="-1"/>
+</groups>

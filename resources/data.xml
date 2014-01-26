@@ -48,8 +48,16 @@
     </custom-block>
     <music desc="" id="482" loop="true" name="Credits" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <music desc="" id="484" loop="true" name="Eletronic" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="225" fixedrot="false" fric="0.2" gid="3" id="477" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Enemy1" oid="-1" pausable="true" rest="0.0" shared="false" sprite="478" static="false" touchable="true">
-        <snippets/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="225" fixedrot="true" fric="0.2" gid="3" id="477" ignoreg="false" inertia="1.0" ldamp="0.0" lw="false" mass="1.0" name="Enemy1" oid="-1" pausable="true" rest="0.0" shared="false" sprite="478" static="false" touchable="true">
+        <snippets>
+            <s enabled="true" id="226">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="10"/>
+                <prop id="3" list="0" val="Walking_left"/>
+                <prop id="4" list="0" val="Walking_right"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
     <sprite atlasID="0" default="0" desc="" height="32" id="478" name="Enemy1" shared="false" width="32">
         <anim across="4" atlasID="-1" down="1" durations="100,100,100,100" height="32" id="0" loop="true" name="Walking_right" numframes="4" originx="0" originy="0" width="128">

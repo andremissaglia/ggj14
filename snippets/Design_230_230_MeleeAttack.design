@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <custom-code comment="false" x="26" y="40">
+                    <int id="0" val="_ThisBehavior = wrapper.name;"/>
+                </custom-code>
+                <if comment="false" x="26" y="60">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-20 comment="false" x="37" y="95">
+                            <div comment="false" id="0" x="0" y="0">
+                                <stepsize comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1000"/>
+                            </div>
+                        </set-val-230-20>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-230-20 comment="false" id="0" x="0" y="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <stepsize comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1000"/>
+                        </div>
+                    </less>
+                </if>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <say-this comment="false" x="26" y="40">
+                    <int id="0" val="Get"/>
+                </say-this>
+                <if comment="false" x="26" y="60">
+                    <group eventID="-1" id="-1">
+                        <shout comment="false" x="37" y="95">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="Stop"/>
+                        </shout>
+                        <set-dxy comment="false" x="37" y="122">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-230-37 comment="false" id="0" x="0" y="0"/>
+                        <and comment="false" id="1" x="0" y="0">
+                            <get-val-230-3 comment="false" id="0" x="0" y="0"/>
+                            <get-val-230-36 comment="false" id="1" x="0" y="0"/>
+                        </and>
+                    </and>
+                </if>
+                <say-this comment="false" x="26" y="161">
+                    <int id="0" val="HandleAnimations"/>
+                </say-this>
+                <if comment="false" x="26" y="181">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-29 comment="false" x="37" y="206">
+                            <get-val-230-9 comment="false" id="0" x="0" y="0"/>
+                        </set-val-230-29>
+                    </group>
+                    <get-val-230-7 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="243">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-29 comment="false" x="37" y="263">
+                            <get-val-230-10 comment="false" id="0" x="0" y="0"/>
+                        </set-val-230-29>
+                    </group>
+                </else>
+                <set-val-230-30 comment="false" x="26" y="300">
+                    <get-val-230-8 comment="false" id="0" x="0" y="0"/>
+                </set-val-230-30>
+                <if comment="false" x="26" y="325">
+                    <group eventID="-1" id="-1">
+                        <set-xy comment="false" x="37" y="363">
+                            <ACTOR eid="var" id="0" vid="6"/>
+                            <int id="1" val="0"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <get-val-230-29 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="408">
+                            <ACTOR eid="var" id="0" vid="6"/>
+                            <int id="1" val="1"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <get-val-230-30 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-xy>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="6"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <isalive comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="6"/>
+                        </isalive>
+                    </and>
+                </if>
+                <if comment="false" x="26" y="465">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="495">
+                            <group eventID="-1" id="-1">
+                                <say-this comment="false" x="48" y="533">
+                                    <int id="0" val="Attack"/>
+                                </say-this>
+                            </group>
+                            <keystate comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                                <get-val-230-2 comment="false" id="1" x="0" y="0"/>
+                            </keystate>
+                        </if>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        <get-val-230-18 comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="26" y="577">
+                    <group eventID="-1" id="-1">
+                        <say-this comment="false" x="37" y="617">
+                            <int id="0" val="StopAttack"/>
+                        </say-this>
+                        <if comment="false" x="37" y="637">
+                            <group eventID="-1" id="-1">
+                                <die comment="false" x="48" y="680">
+                                    <get-val-230-6 comment="false" id="0" x="0" y="0"/>
+                                </die>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <value comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="6"/>
+                                    <int id="1" val="0"/>
+                                </value>
+                                <isalive comment="false" id="1" x="0" y="0">
+                                    <get-val-230-6 comment="false" id="0" x="0" y="0"/>
+                                </isalive>
+                            </and>
+                        </if>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <get-val-230-19 comment="false" id="0" x="0" y="0"/>
+                        <and comment="false" id="1" x="0" y="0">
+                            <get-val-230-3 comment="false" id="0" x="0" y="0"/>
+                            <not comment="false" id="1" x="0" y="0">
+                                <get-val-230-36 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </and>
+                    </or>
+                </if>
+                <if comment="false" x="26" y="736">
+                    <group eventID="-1" id="-1">
+                        <incdec comment="false" x="37" y="761">
+                            <int id="0" val="72"/>
+                            <int id="1" val="0"/>
+                            <div comment="false" id="2" x="0" y="0">
+                                <stepsize comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1000"/>
+                            </div>
+                        </incdec>
+                        <if comment="false" x="37" y="798">
+                            <group eventID="-1" id="-1">
+                                <say-this comment="false" x="48" y="833">
+                                    <int id="0" val="StopAttack"/>
+                                </say-this>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <get-val-230-72 comment="false" id="0" x="0" y="0"/>
+                                <plus comment="false" id="1" x="0" y="0">
+                                    <get-val-230-11 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-230-20 comment="false" id="1" x="0" y="0"/>
+                                </plus>
+                            </moreeq>
+                        </if>
+                    </group>
+                    <get-val-230-3 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <if comment="false" x="26" y="877">
+                    <group eventID="-1" id="-1">
+                        <repeat comment="false" x="37" y="902">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="932">
+                                    <group eventID="-1" id="-1">
+                                        <set-val-230-65 comment="false" x="59" y="987">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <int id="1" val="1"/>
+                                            </get-item-text>
+                                        </set-val-230-65>
+                                        <custom-code comment="false" x="59" y="1027">
+                                            <int id="0" val="_DamagerType = getActorTypeByName(_DamagerName);"/>
+                                        </custom-code>
+                                        <if comment="false" x="59" y="1047">
+                                            <group eventID="-1" id="-1">
+                                                <set-val-230-29 comment="false" x="70" y="1072">
+                                                    <get-item-number comment="false" id="0" x="0" y="0">
+                                                        <str-split comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val=","/>
+                                                        </str-split>
+                                                        <int id="1" val="2"/>
+                                                    </get-item-number>
+                                                </set-val-230-29>
+                                            </group>
+                                            <get-val-230-7 comment="false" id="0" x="0" y="0"/>
+                                        </if>
+                                        <else comment="false" x="59" y="1124">
+                                            <group eventID="-1" id="-1">
+                                                <set-val-230-29 comment="false" x="70" y="1144">
+                                                    <get-item-number comment="false" id="0" x="0" y="0">
+                                                        <str-split comment="false" id="0" x="0" y="0">
+                                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                                <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                                <loopindex comment="false" id="1" x="0" y="0"/>
+                                                            </get-item-text>
+                                                            <int id="1" val=","/>
+                                                        </str-split>
+                                                        <int id="1" val="3"/>
+                                                    </get-item-number>
+                                                </set-val-230-29>
+                                            </group>
+                                        </else>
+                                        <set-val-230-30 comment="false" x="59" y="1196">
+                                            <get-item-number comment="false" id="0" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <int id="1" val="4"/>
+                                            </get-item-number>
+                                        </set-val-230-30>
+                                        <set-val-230-21 comment="false" x="59" y="1236">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <int id="1" val="5"/>
+                                            </get-item-text>
+                                        </set-val-230-21>
+                                        <set-val-230-39 comment="false" x="59" y="1276">
+                                            <string-to-anim comment="false" id="0" x="0" y="0">
+                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val=","/>
+                                                    </str-split>
+                                                    <int id="1" val="6"/>
+                                                </get-item-text>
+                                            </string-to-anim>
+                                        </set-val-230-39>
+                                        <set-val-230-40 comment="false" x="59" y="1321">
+                                            <string-to-anim comment="false" id="0" x="0" y="0">
+                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val=","/>
+                                                    </str-split>
+                                                    <int id="1" val="7"/>
+                                                </get-item-text>
+                                            </string-to-anim>
+                                        </set-val-230-40>
+                                        <set-val-230-33 comment="false" x="59" y="1366">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <int id="1" val="8"/>
+                                            </get-item-text>
+                                        </set-val-230-33>
+                                        <set-val-230-34 comment="false" x="59" y="1406">
+                                            <get-item-text comment="false" id="0" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <int id="1" val="9"/>
+                                            </get-item-text>
+                                        </set-val-230-34>
+                                        <set-val-230-20 comment="false" x="59" y="1446">
+                                            <get-item-number comment="false" id="0" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <int id="1" val="10"/>
+                                            </get-item-number>
+                                        </set-val-230-20>
+                                        <if comment="false" x="59" y="1486">
+                                            <group eventID="-1" id="-1">
+                                                <set-val-230-20 comment="false" x="70" y="1521">
+                                                    <div comment="false" id="0" x="0" y="0">
+                                                        <stepsize comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="1000"/>
+                                                    </div>
+                                                </set-val-230-20>
+                                            </group>
+                                            <less comment="false" id="0" x="0" y="0">
+                                                <get-val-230-20 comment="false" id="0" x="0" y="0"/>
+                                                <div comment="false" id="1" x="0" y="0">
+                                                    <stepsize comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="1000"/>
+                                                </div>
+                                            </less>
+                                        </if>
+                                        <set-val-230-11 comment="false" x="59" y="1563">
+                                            <get-item-number comment="false" id="0" x="0" y="0">
+                                                <str-split comment="false" id="0" x="0" y="0">
+                                                    <get-item-text comment="false" id="0" x="0" y="0">
+                                                        <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                        <loopindex comment="false" id="1" x="0" y="0"/>
+                                                    </get-item-text>
+                                                    <int id="1" val=","/>
+                                                </str-split>
+                                                <int id="1" val="11"/>
+                                            </get-item-number>
+                                        </set-val-230-11>
+                                        <set-val-230-37 comment="false" x="59" y="1603">
+                                            <as-boolean comment="false" id="0" x="0" y="0">
+                                                <get-item-text comment="false" id="0" x="0" y="0">
+                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val=","/>
+                                                    </str-split>
+                                                    <int id="1" val="12"/>
+                                                </get-item-text>
+                                            </as-boolean>
+                                        </set-val-230-37>
+                                    </group>
+                                    <or comment="false" id="0" x="0" y="0">
+                                        <and comment="false" id="0" x="0" y="0">
+                                            <eq comment="false" id="0" x="0" y="0">
+                                                <get-val-230-73 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="Weapon Name"/>
+                                            </eq>
+                                            <eq comment="false" id="1" x="0" y="0">
+                                                <get-val-230-59 comment="false" id="0" x="0" y="0"/>
+                                                <get-item-text comment="false" id="1" x="0" y="0">
+                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val=","/>
+                                                    </str-split>
+                                                    <int id="1" val="0"/>
+                                                </get-item-text>
+                                            </eq>
+                                        </and>
+                                        <and comment="false" id="1" x="0" y="0">
+                                            <eq comment="false" id="0" x="0" y="0">
+                                                <get-val-230-73 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="Weapon Type"/>
+                                            </eq>
+                                            <eq comment="false" id="1" x="0" y="0">
+                                                <get-val-230-1 comment="false" id="0" x="0" y="0"/>
+                                                <get-item-text comment="false" id="1" x="0" y="0">
+                                                    <str-split comment="false" id="0" x="0" y="0">
+                                                        <get-item-text comment="false" id="0" x="0" y="0">
+                                                            <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                                                            <loopindex comment="false" id="1" x="0" y="0"/>
+                                                        </get-item-text>
+                                                        <int id="1" val=","/>
+                                                    </str-split>
+                                                    <int id="1" val="0"/>
+                                                </get-item-text>
+                                            </eq>
+                                        </and>
+                                    </or>
+                                </if>
+                            </group>
+                            <length-list comment="false" id="0" x="0" y="0">
+                                <get-val-230-67 comment="false" id="0" x="0" y="0"/>
+                            </length-list>
+                        </repeat>
+                    </group>
+                    <get-val-230-71 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-61 comment="false" x="37" y="73">
+                            <tostring comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Attack Behaviors Lists"/>
+                                    <int id="2" val="_AttackingBehavior"/>
+                                </get-attribute>
+                            </tostring>
+                        </set-val-230-61>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Attack Behaviors Lists"/>
+                    </has-snippet>
+                </if>
+                <else comment="false" x="26" y="123">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-61 comment="false" x="37" y="143">
+                            <get-val-230-60 comment="false" id="0" x="0" y="0"/>
+                        </set-val-230-61>
+                    </group>
+                </else>
+                <if comment="false" x="26" y="180">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-54 comment="false" x="37" y="213">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Health"/>
+                                    <int id="2" val="_CurrentHealth"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-230-54>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Health"/>
+                    </has-snippet>
+                </if>
+                <else comment="false" x="26" y="263">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-54 comment="false" x="37" y="283">
+                            <int id="0" val="1"/>
+                        </set-val-230-54>
+                    </group>
+                </else>
+                <if comment="false" x="26" y="315">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-56 comment="false" x="37" y="348">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Dash"/>
+                                    <int id="2" val="_IsDashing"/>
+                                </get-attribute>
+                            </as-boolean>
+                        </set-val-230-56>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Dash"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="398">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-53 comment="false" x="37" y="431">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Use Skill"/>
+                                    <int id="2" val="_IsUsingSkill"/>
+                                </get-attribute>
+                            </as-boolean>
+                        </set-val-230-53>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Use Skill"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="481">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-38 comment="false" x="37" y="514">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Wall Slide"/>
+                                    <int id="2" val="_IsWallSliding"/>
+                                </get-attribute>
+                            </as-boolean>
+                        </set-val-230-38>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Wall Slide"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="564">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-36 comment="false" x="37" y="597">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="On Ground"/>
+                                    <int id="2" val="_OnGround"/>
+                                </get-attribute>
+                            </as-boolean>
+                        </set-val-230-36>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="On Ground"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="647">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-31 comment="false" x="37" y="680">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Duck"/>
+                                    <int id="2" val="_IsDucking"/>
+                                </get-attribute>
+                            </as-boolean>
+                        </set-val-230-31>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Duck"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="730">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-19 comment="false" x="37" y="763">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Damage Knockback"/>
+                                    <int id="2" val="_Stun"/>
+                                </get-attribute>
+                            </as-boolean>
+                        </set-val-230-19>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Damage Knockback"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="813">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-18 comment="false" x="37" y="846">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Controllable"/>
+                                    <int id="2" val="_Controllable"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-230-18>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Controllable"/>
+                    </has-snippet>
+                </if>
+                <else comment="false" x="26" y="896">
+                    <group eventID="-1" id="-1"/>
+                </else>
+                <if comment="false" x="26" y="948">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-52 comment="false" x="37" y="981">
+                            <tostring comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Identifier Friend or Foe"/>
+                                    <int id="2" val="_Enemy"/>
+                                </get-attribute>
+                            </tostring>
+                        </set-val-230-52>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Identifier Friend or Foe"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="1031">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-16 comment="false" x="37" y="1064">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Wall Run"/>
+                                    <int id="2" val="_IsWallRunning"/>
+                                </get-attribute>
+                            </as-boolean>
+                        </set-val-230-16>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Wall Run"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="1114">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-14 comment="false" x="37" y="1147">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Combat Statistics"/>
+                                    <int id="2" val="_MaximumAttack"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-230-14>
+                        <set-val-230-15 comment="false" x="37" y="1185">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Combat Statistics"/>
+                                    <int id="2" val="_MinimumAttack"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-230-15>
+                        <set-val-230-62 comment="false" x="37" y="1223">
+                            <as-number comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Combat Statistics"/>
+                                    <int id="2" val="_CriticalRate"/>
+                                </get-attribute>
+                            </as-number>
+                        </set-val-230-62>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Combat Statistics"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="1273">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-7 comment="false" x="37" y="1306">
+                            <as-boolean comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Facing"/>
+                                    <int id="2" val="_FacingRight"/>
+                                </get-attribute>
+                            </as-boolean>
+                        </set-val-230-7>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Facing"/>
+                    </has-snippet>
+                </if>
+                <if comment="false" x="26" y="1356">
+                    <group eventID="-1" id="-1">
+                        <set-val-230-1 comment="false" x="37" y="1389">
+                            <tostring comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Equipments"/>
+                                    <int id="2" val="_WeaponType"/>
+                                </get-attribute>
+                            </tostring>
+                        </set-val-230-1>
+                        <set-val-230-23 comment="false" x="37" y="1427">
+                            <tostring comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="Equipments"/>
+                                    <int id="2" val="_DamageType"/>
+                                </get-attribute>
+                            </tostring>
+                        </set-val-230-23>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="Equipments"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <int id="0" val="Get"/>
+        </receive-message>
+    </group>
+    <group eventID="3" id="1">
+        <set-val-230-18 comment="false" x="127" y="911">
+            <int id="0" val=""/>
+        </set-val-230-18>
+    </group>
+    <group eventID="3" id="2">
+        <set-val-230-59 comment="false" x="431" y="1488">
+            <int id="0" val=""/>
+        </set-val-230-59>
+    </group>
+    <group eventID="3" id="-1">
+        <get-game-val-3 comment="false" x="367" y="913"/>
+    </group>
+    <group eventID="4" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="95">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="138">
+                                    <group eventID="-1" id="-1">
+                                        <set-val-230-3 comment="false" x="59" y="168">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-230-3>
+                                        <for-each comment="false" x="59" y="193">
+                                            <group eventID="-1" id="-1">
+                                                <actor-enabledisable-snippet comment="false" x="70" y="218">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                    <tostring comment="false" id="2" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                    </tostring>
+                                                </actor-enabledisable-snippet>
+                                            </group>
+                                            <get-val-230-55 comment="false" id="0" x="0" y="0"/>
+                                        </for-each>
+                                        <dolater comment="false" x="59" y="267">
+                                            <group eventID="-1" id="-1">
+                                                <if comment="false" x="70" y="299">
+                                                    <group eventID="-1" id="-1">
+                                                        <play-sound4 comment="false" x="81" y="354">
+                                                            <int id="0" val="0"/>
+                                                            <SOUND eid="var" id="1" vid="35"/>
+                                                        </play-sound4>
+                                                        <create-actor3 comment="false" x="81" y="381">
+                                                            <ACTORTYPE eid="var" id="0" vid="5"/>
+                                                            <plus comment="false" id="1" x="0" y="0">
+                                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                                    <ACTOR eid="this" id="0"/>
+                                                                    <int id="1" val="0"/>
+                                                                </get-xy>
+                                                                <get-val-230-29 comment="false" id="1" x="0" y="0"/>
+                                                            </plus>
+                                                            <plus comment="false" id="2" x="0" y="0">
+                                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                                    <ACTOR eid="this" id="0"/>
+                                                                    <int id="1" val="1"/>
+                                                                </get-xy>
+                                                                <get-val-230-30 comment="false" id="1" x="0" y="0"/>
+                                                            </plus>
+                                                            <int id="3" val="0"/>
+                                                        </create-actor3>
+                                                        <set-val-230-6 comment="false" x="81" y="426">
+                                                            <ACTOR eid="lastcreated" id="0"/>
+                                                        </set-val-230-6>
+                                                        <if comment="false" x="81" y="453">
+                                                            <group eventID="-1" id="-1">
+                                                                <setanim comment="false" x="92" y="478">
+                                                                    <get-val-230-6 comment="false" id="0" x="0" y="0"/>
+                                                                    <string-to-anim comment="false" id="1" x="0" y="0">
+                                                                        <get-val-230-33 comment="false" id="0" x="0" y="0"/>
+                                                                    </string-to-anim>
+                                                                </setanim>
+                                                            </group>
+                                                            <get-val-230-7 comment="false" id="0" x="0" y="0"/>
+                                                        </if>
+                                                        <else comment="false" x="81" y="527">
+                                                            <group eventID="-1" id="-1">
+                                                                <setanim comment="false" x="92" y="547">
+                                                                    <get-val-230-6 comment="false" id="0" x="0" y="0"/>
+                                                                    <string-to-anim comment="false" id="1" x="0" y="0">
+                                                                        <get-val-230-34 comment="false" id="0" x="0" y="0"/>
+                                                                    </string-to-anim>
+                                                                </setanim>
+                                                            </group>
+                                                        </else>
+                                                        <if comment="false" x="81" y="596">
+                                                            <group eventID="-1" id="-1">
+                                                                <set-attribute comment="false" x="92" y="621">
+                                                                    <ACTOR eid="var" id="0" vid="6"/>
+                                                                    <get-val-230-21 comment="false" id="1" x="0" y="0"/>
+                                                                    <int id="2" val="_StatustoAddList"/>
+                                                                    <get-val-230-47 comment="false" id="3" x="0" y="0"/>
+                                                                </set-attribute>
+                                                                <say comment="false" x="92" y="653">
+                                                                    <ACTOR eid="var" id="0" vid="6"/>
+                                                                    <get-val-230-21 comment="false" id="1" x="0" y="0"/>
+                                                                    <int id="2" val="AddEffect"/>
+                                                                </say>
+                                                            </group>
+                                                            <get-val-230-26 comment="false" id="0" x="0" y="0"/>
+                                                        </if>
+                                                        <if comment="false" x="81" y="697">
+                                                            <group eventID="-1" id="-1"/>
+                                                            <lesseq comment="false" id="0" x="0" y="0">
+                                                                <randint comment="false" id="0" x="0" y="0">
+                                                                    <int id="0" val="1"/>
+                                                                    <int id="1" val="100"/>
+                                                                </randint>
+                                                                <get-val-230-62 comment="false" id="1" x="0" y="0"/>
+                                                            </lesseq>
+                                                        </if>
+                                                        <else comment="false" x="81" y="759">
+                                                            <group eventID="-1" id="-1"/>
+                                                        </else>
+                                                        <if comment="false" x="81" y="811">
+                                                            <group eventID="-1" id="-1">
+                                                                <set-attribute comment="false" x="92" y="836">
+                                                                    <ACTOR eid="var" id="0" vid="6"/>
+                                                                    <get-val-230-21 comment="false" id="1" x="0" y="0"/>
+                                                                    <int id="2" val="_KnockbackX"/>
+                                                                    <get-val-230-49 comment="false" id="3" x="0" y="0"/>
+                                                                </set-attribute>
+                                                                <set-attribute comment="false" x="92" y="868">
+                                                                    <ACTOR eid="var" id="0" vid="6"/>
+                                                                    <get-val-230-21 comment="false" id="1" x="0" y="0"/>
+                                                                    <int id="2" val="_KnockbackY"/>
+                                                                    <get-val-230-50 comment="false" id="3" x="0" y="0"/>
+                                                                </set-attribute>
+                                                                <if comment="false" x="92" y="900">
+                                                                    <group eventID="-1" id="-1">
+                                                                        <set-attribute comment="false" x="103" y="925">
+                                                                            <ACTOR eid="var" id="0" vid="6"/>
+                                                                            <get-val-230-21 comment="false" id="1" x="0" y="0"/>
+                                                                            <int id="2" val="_AttackerXCenter"/>
+                                                                            <get-xy comment="false" id="3" x="0" y="0">
+                                                                                <ACTOR eid="this" id="0"/>
+                                                                                <int id="1" val="2"/>
+                                                                            </get-xy>
+                                                                        </set-attribute>
+                                                                        <set-attribute comment="false" x="103" y="965">
+                                                                            <ACTOR eid="var" id="0" vid="6"/>
+                                                                            <get-val-230-21 comment="false" id="1" x="0" y="0"/>
+                                                                            <int id="2" val="_AttackerYCenter"/>
+                                                                            <get-xy comment="false" id="3" x="0" y="0">
+                                                                                <ACTOR eid="this" id="0"/>
+                                                                                <int id="1" val="3"/>
+                                                                            </get-xy>
+                                                                        </set-attribute>
+                                                                    </group>
+                                                                    <get-val-230-51 comment="false" id="0" x="0" y="0"/>
+                                                                </if>
+                                                            </group>
+                                                            <get-val-230-48 comment="false" id="0" x="0" y="0"/>
+                                                        </if>
+                                                        <else comment="false" x="81" y="1029">
+                                                            <group eventID="-1" id="-1">
+                                                                <set-attribute comment="false" x="92" y="1049">
+                                                                    <ACTOR eid="var" id="0" vid="6"/>
+                                                                    <get-val-230-21 comment="false" id="1" x="0" y="0"/>
+                                                                    <int id="2" val="_KnockbackX"/>
+                                                                    <int id="3" val="0"/>
+                                                                </set-attribute>
+                                                                <set-attribute comment="false" x="92" y="1081">
+                                                                    <ACTOR eid="var" id="0" vid="6"/>
+                                                                    <get-val-230-21 comment="false" id="1" x="0" y="0"/>
+                                                                    <int id="2" val="_KnockbackY"/>
+                                                                    <int id="3" val="0"/>
+                                                                </set-attribute>
+                                                            </group>
+                                                        </else>
+                                                    </group>
+                                                    <and comment="false" id="0" x="0" y="0">
+                                                        <and comment="false" id="0" x="0" y="0">
+                                                            <isalive comment="false" id="0" x="0" y="0">
+                                                                <ACTOR eid="this" id="0"/>
+                                                            </isalive>
+                                                            <and comment="false" id="1" x="0" y="0">
+                                                                <eq comment="false" id="0" x="0" y="0">
+                                                                    <get-val-230-60 comment="false" id="0" x="0" y="0"/>
+                                                                    <get-val-230-61 comment="false" id="1" x="0" y="0"/>
+                                                                </eq>
+                                                                <and comment="false" id="1" x="0" y="0">
+                                                                    <get-val-230-36 comment="false" id="0" x="0" y="0"/>
+                                                                    <not comment="false" id="1" x="0" y="0">
+                                                                        <get-val-230-31 comment="false" id="0" x="0" y="0"/>
+                                                                    </not>
+                                                                </and>
+                                                            </and>
+                                                        </and>
+                                                        <and comment="false" id="1" x="0" y="0">
+                                                            <not comment="false" id="0" x="0" y="0">
+                                                                <get-val-230-16 comment="false" id="0" x="0" y="0"/>
+                                                            </not>
+                                                            <and comment="false" id="1" x="0" y="0">
+                                                                <not comment="false" id="0" x="0" y="0">
+                                                                    <get-val-230-19 comment="false" id="0" x="0" y="0"/>
+                                                                </not>
+                                                                <and comment="false" id="1" x="0" y="0">
+                                                                    <more comment="false" id="0" x="0" y="0">
+                                                                        <get-val-230-54 comment="false" id="0" x="0" y="0"/>
+                                                                        <int id="1" val="0"/>
+                                                                    </more>
+                                                                    <and comment="false" id="1" x="0" y="0">
+                                                                        <not comment="false" id="0" x="0" y="0">
+                                                                            <get-val-230-53 comment="false" id="0" x="0" y="0"/>
+                                                                        </not>
+                                                                        <not comment="false" id="1" x="0" y="0">
+                                                                            <get-val-230-56 comment="false" id="0" x="0" y="0"/>
+                                                                        </not>
+                                                                    </and>
+                                                                </and>
+                                                            </and>
+                                                        </and>
+                                                    </and>
+                                                </if>
+                                                <else comment="false" x="70" y="1137">
+                                                    <group eventID="-1" id="-1">
+                                                        <set-val-230-3 comment="false" x="81" y="1157">
+                                                            <false comment="false" id="0" x="0" y="0"/>
+                                                        </set-val-230-3>
+                                                    </group>
+                                                </else>
+                                            </group>
+                                            <get-val-230-20 comment="false" id="0" x="0" y="0"/>
+                                            <ACTOR eid="this" id="2"/>
+                                        </dolater>
+                                    </group>
+                                    <not comment="false" id="0" x="0" y="0">
+                                        <get-val-230-3 comment="false" id="0" x="0" y="0"/>
+                                    </not>
+                                </if>
+                            </group>
+                            <or comment="false" id="0" x="0" y="0">
+                                <contains-item comment="false" id="0" x="0" y="0">
+                                    <get-val-230-57 comment="false" id="0" x="0" y="0"/>
+                                    <get-val-230-1 comment="false" id="1" x="0" y="0"/>
+                                </contains-item>
+                                <not comment="false" id="1" x="0" y="0">
+                                    <has-snippet comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="Equipments"/>
+                                    </has-snippet>
+                                </not>
+                            </or>
+                        </if>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <and comment="false" id="0" x="0" y="0">
+                            <get-val-230-36 comment="false" id="0" x="0" y="0"/>
+                            <not comment="false" id="1" x="0" y="0">
+                                <get-val-230-31 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                        </and>
+                        <and comment="false" id="1" x="0" y="0">
+                            <not comment="false" id="0" x="0" y="0">
+                                <get-val-230-16 comment="false" id="0" x="0" y="0"/>
+                            </not>
+                            <and comment="false" id="1" x="0" y="0">
+                                <not comment="false" id="0" x="0" y="0">
+                                    <get-val-230-19 comment="false" id="0" x="0" y="0"/>
+                                </not>
+                                <and comment="false" id="1" x="0" y="0">
+                                    <more comment="false" id="0" x="0" y="0">
+                                        <get-val-230-54 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="0"/>
+                                    </more>
+                                    <and comment="false" id="1" x="0" y="0">
+                                        <not comment="false" id="0" x="0" y="0">
+                                            <get-val-230-53 comment="false" id="0" x="0" y="0"/>
+                                        </not>
+                                        <not comment="false" id="1" x="0" y="0">
+                                            <get-val-230-56 comment="false" id="0" x="0" y="0"/>
+                                        </not>
+                                    </and>
+                                </and>
+                            </and>
+                        </and>
+                    </and>
+                </if>
+            </group>
+            <int id="0" val="Attack"/>
+        </receive-message>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <set-val-230-26 comment="false" x="26" y="40">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-230-26>
+            </group>
+            <int id="0" val="AddEffect"/>
+        </receive-message>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <if comment="false" x="37" y="75">
+                            <group eventID="-1" id="-1">
+                                <if comment="false" x="48" y="100">
+                                    <group eventID="-1" id="-1">
+                                        <setanim comment="false" x="59" y="125">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-230-39 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                    </group>
+                                    <get-val-230-7 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="48" y="169">
+                                    <group eventID="-1" id="-1">
+                                        <setanim comment="false" x="59" y="189">
+                                            <ACTOR eid="this" id="0"/>
+                                            <get-val-230-40 comment="false" id="1" x="0" y="0"/>
+                                        </setanim>
+                                    </group>
+                                </else>
+                            </group>
+                            <get-val-230-36 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-230-3 comment="false" id="0" x="0" y="0"/>
+                        <not comment="false" id="1" x="0" y="0">
+                            <get-val-230-19 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+            </group>
+            <int id="0" val="HandleAnimations"/>
+        </receive-message>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receive-message comment="false" x="15" y="15">
+            <group eventID="-1" id="-1">
+                <for-each comment="false" x="26" y="40">
+                    <group eventID="-1" id="-1">
+                        <actor-enabledisable-snippet comment="false" x="37" y="65">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <tostring comment="false" id="2" x="0" y="0">
+                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                            </tostring>
+                        </actor-enabledisable-snippet>
+                    </group>
+                    <get-val-230-55 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+                <set-val-230-3 comment="false" x="26" y="114">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-230-3>
+                <set-val-230-26 comment="false" x="26" y="139">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-230-26>
+                <set-val-230-72 comment="false" x="26" y="164">
+                    <int id="0" val="0"/>
+                </set-val-230-72>
+            </group>
+            <int id="0" val="StopAttack"/>
+        </receive-message>
+    </group>
+    <group eventID="7" id="-1"/>
+</groups>

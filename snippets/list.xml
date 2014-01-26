@@ -126,6 +126,47 @@
             <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
         </events>
     </snippet>
+    <snippet attachedevent="false" class="scripts.Design_231_231_MeleeAttack" desc="This behavior attaches to a player allowing you to swing a melee weapon.&lt;br&gt;You can select the player's animations for idling, moving, and in-air attacks, choose the weapon actor and set the weapon offset.&lt;br&gt;&lt;br&gt;&#10;This is a heavily modified version of the nonworking &quot;Sword Attack&quot; behavior that was uploaded to the StencylForge by 'cesarmoy' on Dec. 29, 2012.&#10;&lt;br&gt;It's my first behavior and upload, so please let me know if there's something that I've done wrong, or if there are ways to optimize this." description="This behavior attaches to a player allowing you to swing a melee weapon.&lt;br&gt;You can select the player's animations for idling, moving, and in-air attacks, choose the weapon actor and set the weapon offset.&lt;br&gt;&lt;br&gt;&#10;This is a heavily modified version of the nonworking &quot;Sword Attack&quot; behavior that was uploaded to the StencylForge by 'cesarmoy' on Dec. 29, 2012.&#10;&lt;br&gt;It's my first behavior and upload, so please let me know if there's something that I've done wrong, or if there are ways to optimize this." design="true" drawOrder="0" id="231" language="" name="Melee Attack" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
+        <boolean default="false" desc="" dropdown="" fullname="Attacking" hidden="true" id="1" name="_Attacking" order="3"/>
+        <actor default="0" desc="" dropdown="" fullname="Sword" hidden="true" id="2" name="_Sword" order="1"/>
+        <boolean default="false" desc="" dropdown="" fullname="Knocking Back" hidden="true" id="8" name="_KnockingBack" order="2"/>
+        <number default="24.0" desc="Set how many pixels left and right to adjust by, relative to the Players center position.&#10;&lt;br&gt;&lt;b&gt;Greater negative numbers move the sword left." dropdown="" fullname="X Offset for RIGHT" hidden="false" id="15" name="_XOffsetforRIGHT" order="7"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="-24.0" desc="Set how many pixels left and right to adjust by, relative to the Players center position.&#10;&lt;br&gt;&lt;b&gt;Greater negative numbers move the sword left." dropdown="" fullname="X Offset for LEFT" hidden="false" id="17" name="_XOffsetforLEFT" order="9"/>
+        <number default="14.0" desc="Set how many pixels left and right to adjust by, relative to the Players center position.&#10;&lt;br&gt;&lt;b&gt;Greater negative numbers move the sword up." dropdown="" fullname="Y Offset for RIGHT" hidden="false" id="16" name="_YOffsetforRIGHT" order="8"/>
+        <number default="14.0" desc="Set how many pixels left and right to adjust by, relative to the Players center position.&#10;&lt;br&gt;&lt;b&gt;Greater negative numbers move the sword up." dropdown="" fullname="Y Offset for LEFT" hidden="false" id="18" name="_YOffsetforLEFT" order="10"/>
+        <control default="" desc="Select the control used for attacking." dropdown="" fullname="Attack Control" hidden="false" id="21" name="_AttackControl" order="5"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is Idle, facing Left." dropdown="" fullname="Attack Idle Left" hidden="false" id="23" name="_AttackIdleLeft" order="28"/>
+        <boolean default="false" desc="" dropdown="" fullname="Can Attack" hidden="true" id="22" name="_CanAttack" order="4"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is Idle, facing Right." dropdown="" fullname="Attack Idle Right" hidden="false" id="26" name="_AttackIdleRight" order="21"/>
+        <animation default="" desc="The character animation that is used when the character is Idle, facing Right." dropdown="" fullname="Idle Right" hidden="false" id="31" name="_IdleRight" order="17"/>
+        <animation default="" desc="The character animation that is used when the character is Idle, facing Left." dropdown="" fullname="Idle Left" hidden="false" id="30" name="_IdleLeft" order="24"/>
+        <animation default="" desc="The character animation that is used when the character is Jumping, facing Left." dropdown="" fullname="Jump Left" hidden="false" id="34" name="_JumpLeft" order="26"/>
+        <animation default="" desc="The character animation that is used when the character is Jumping, facing Right." dropdown="" fullname="Jump Right" hidden="false" id="35" name="_JumpRight" order="19"/>
+        <actortype default="" desc="The weapon that will be used for the weapon animations." dropdown="" fullname="Weapon Type" hidden="false" id="36" name="_WeaponType" order="6"/>
+        <animation default="" desc="The character animation that is used when the character is Moving, facing Left." dropdown="" fullname="Move Left" hidden="false" id="43" name="_MoveLeft" order="25"/>
+        <animation default="" desc="The character animation that is used when the character is Moving, facing Right." dropdown="" fullname="Move Right" hidden="false" id="46" name="_MoveRight" order="18"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is Moving, facing Right." dropdown="" fullname="Attack Move Right" hidden="false" id="47" name="_AttackMoveRight" order="22"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is Moving, facing Left." dropdown="" fullname="Attack Move Left" hidden="false" id="45" name="_AttackMoveLeft" order="29"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Idle Left animation." dropdown="" fullname="Weapon Animation Idle Left" hidden="false" id="51" name="_WeaponAnimationIdleLeft" order="14"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Jump Right animation." dropdown="" fullname="Weapon Animation Jump Right" hidden="false" id="50" name="_WeaponAnimationJumpRight" order="13"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Move Right animation." dropdown="" fullname="Weapon Animation Move Right" hidden="false" id="49" name="_WeaponAnimationMoveRight" order="12"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Idle Right animation." dropdown="" fullname="Weapon Animation Idle Right" hidden="false" id="48" name="_WeaponAnimationIdleRight" order="11"/>
+        <animation default="" desc="The character animation that is used when the character is Falling, facing Right." dropdown="" fullname="Falling Right" hidden="false" id="55" name="_FallingRight" order="20"/>
+        <animation default="" desc="The character animation that is used when the character is Falling, facing Left." dropdown="" fullname="Falling Left" hidden="false" id="54" name="_FallingLeft" order="27"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Jump Left animation." dropdown="" fullname="Weapon Animation Jump Left" hidden="false" id="53" name="_WeaponAnimationJumpLeft" order="16"/>
+        <text default="" desc="The name of the weapon animation to use when the character is playing the Move Left animation." dropdown="" fullname="Weapon Animation Move Left" hidden="false" id="52" name="_WeaponAnimationMoveLeft" order="15"/>
+        <boolean default="false" desc="Turn this on if you want to see logging in the console." dropdown="" fullname="Debug" hidden="false" id="58" name="_Debug" order="31"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is In the Air, facing Right." dropdown="" fullname="Attack In Air Right" hidden="false" id="57" name="_AttackInAirRight" order="23"/>
+        <animation default="" desc="The character animation that you want to use when attacking while the character is in the Air, facing Left." dropdown="" fullname="Attack In Air Left" hidden="false" id="56" name="_AttackInAirLeft" order="30"/>
+        <blocks/>
+        <events>
+            <event displayName="Updated" enabled="true" id="2" name="step" order="4" repeats="true"/>
+            <event displayName="tookDamage" enabled="true" id="3" name="event-custom" order="7" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="6" name="step" order="3" repeats="true"/>
+            <event displayName="Updated" enabled="true" id="8" name="step" order="6" repeats="true"/>
+        </events>
+    </snippet>
     <snippet attachedevent="false" class="scripts.Design_110_110_Running" desc="This Behavior controls the player's ability to run.  The Walking Behavior must also be attached for this Behavior to work properly." description="This Behavior controls the player's ability to run.  The Walking Behavior must also be attached for this Behavior to work properly." design="true" drawOrder="0" id="110" language="" name="Running" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <boolean default="false" desc="Prevent the Actor from running?" dropdown="" fullname="Prevent Running?" hidden="false" id="1" name="_PreventRunning" order="1"/>
         <control default="" desc="Select the key used to run." dropdown="" fullname="Run Key" hidden="false" id="2" name="_RunKey" order="2"/>
@@ -207,9 +248,15 @@
         <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_226_226_Follow" desc="" description="" design="true" drawOrder="0" id="226" language="" name="Follow" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
-        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="2147483647"/>
+        <actor default="" desc="" dropdown="" fullname="Target" hidden="false" id="1" name="_Target" order="1"/>
+        <number default="0" desc="" dropdown="" fullname="speed" hidden="false" id="2" name="_speed" order="2"/>
+        <animation default="" desc="" dropdown="" fullname="walking left" hidden="false" id="3" name="_walkingleft" order="3"/>
+        <animation default="" desc="" dropdown="" fullname="walking right" hidden="false" id="4" name="_walkingright" order="4"/>
+        <actor default="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <blocks/>
-        <events/>
+        <events>
+            <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_107_107_OnGround" desc="This Behavior determines if the player is on the ground and sets an Actor Level Attribute as appropriate.  Other Behaviors can then use this Attribute to drive their logic." description="This Behavior determines if the player is on the ground and sets an Actor Level Attribute as appropriate.  Other Behaviors can then use this Attribute to drive their logic." design="true" drawOrder="0" id="107" language="" name="On Ground" oid="-1" package="" scenespecific="false" shared="false" type="actor">
         <boolean default="false" desc="" dropdown="" fullname="Hit Ground?" hidden="true" id="1" name="_HitGround" order="1"/>
