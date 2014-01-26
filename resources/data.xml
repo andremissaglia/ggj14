@@ -241,8 +241,8 @@
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val="0"/>
                 <prop id="8" list="0" val="false"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="24.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="-24.0"/>
                 <prop id="16" list="0" val="14.0"/>
                 <prop id="18" list="0" val="14.0"/>
@@ -287,8 +287,8 @@
                 <prop id="12" list="0" val="left"/>
                 <prop id="13" list="0" val="0.4"/>
                 <prop id="14" list="0" val="true"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="run-r"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="run-r"/>
                 <prop id="16" list="0" val="run-l"/>
                 <prop id="19" list="0" val="run-r"/>
@@ -383,8 +383,8 @@
                 <prop id="12" list="0" val="250"/>
                 <prop id="13" list="0" val="65"/>
                 <prop id="14" list="0" val="jump-r"/>
-                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="15" list="0" val="jump-l"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="Wall Jumping"/>
                 <prop id="16" list="0" val="false"/>
             </s>
@@ -595,7 +595,7 @@
         <tile collision="1" data="" durations="100" frames="46" id="46" order="-1"/>
         <tile collision="1" data="" durations="100" frames="47" id="47" order="-1"/>
     </tileset>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="1748" id="500" name="ReggaeBG" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="3203" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="1748" id="500" name="ReggaeBG" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="3203" xpf="0.1" ypf="0.1"/>
     <music desc="" id="473" loop="true" name="Rock" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <music desc="" id="481" loop="true" name="Silent Movie" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <custom-block blocktag="custom-472" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;SlowToMax&quot;, ~);" desc="" global="false" gui="Slow Down %0 To Max Speed Using Rate %1" id="472" message="SlowToMax" name="SlowToMax" oid="-1" return="VOID" shared="false" snippetID="178">
@@ -616,7 +616,7 @@
             </s>
         </snippets>
     </actor>
-    <background atlasID="0" desc="" durations="" dx="-0.0" dy="-0.0" height="0" id="492" name="Vintage" numframes="0" oid="-1" repeats="true" resized="false" shared="false" width="0" xpf="1.0" ypf="1.0"/>
+    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="1800" id="492" name="Vintage" numframes="1" oid="-1" repeats="true" resized="false" shared="false" width="3200" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-361" blocktype="ACTION" code="~.say(&quot;Walking&quot;, &quot;WalkAccel&quot;, ~);" desc="" global="false" gui="For %0 Set Walk Accel to %1" id="361" message="WalkAccel" name="WalkAccel" oid="-1" return="VOID" shared="false" snippetID="178">
         <blank name="Self" order="0" type="ACTOR"/>
         <blank name="Accel" order="1" type="NUMBER"/>

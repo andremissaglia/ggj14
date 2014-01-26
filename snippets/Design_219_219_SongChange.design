@@ -41,7 +41,7 @@
                         <do-flash comment="false" x="37" y="214">
                             <group eventID="4" id="-1">
                                 <custom-code comment="false" x="48" y="234">
-                                    <int id="0" val="setBackground(&amp;quot;Cloud&amp;quot;, &amp;quot;Hell&amp;quot;)"/>
+                                    <int id="0" val="setBackground(&amp;quot;ReggaeBG&amp;quot;, &amp;quot;Hell&amp;quot;)"/>
                                 </custom-code>
                             </group>
                         </do-flash>
@@ -56,7 +56,7 @@
                         <do-flash comment="false" x="37" y="308">
                             <group eventID="4" id="-1">
                                 <custom-code comment="false" x="48" y="328">
-                                    <int id="0" val="setBackground(&amp;quot;Cloud&amp;quot;, &amp;quot;Vintage&amp;quot;)"/>
+                                    <int id="0" val="setBackground(&amp;quot;ReggaeBG&amp;quot;, &amp;quot;Vintage&amp;quot;)"/>
                                 </custom-code>
                             </group>
                         </do-flash>
@@ -277,7 +277,7 @@
                             <mod comment="false" id="0" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
                                     <get-val-219-2 comment="false" id="0" x="0" y="0"/>
-                                    <int id="1" val="0.5"/>
+                                    <int id="1" val="0.2"/>
                                 </plus>
                                 <int id="1" val="514"/>
                             </mod>
