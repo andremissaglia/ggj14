@@ -29,6 +29,43 @@
                     </group>
                     <get-game-val-1 comment="false" id="0" x="0" y="0"/>
                 </if>
+                <if comment="false" x="26" y="122">
+                    <group eventID="2" id="-1"/>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="26" y="184">
+                    <group eventID="2" id="-1">
+                        <do-flash comment="false" x="37" y="214">
+                            <group eventID="4" id="-1">
+                                <custom-code comment="false" x="48" y="234">
+                                    <int id="0" val="setBackground(&amp;quot;Cloud&amp;quot;, &amp;quot;Hell&amp;quot;)"/>
+                                </custom-code>
+                            </group>
+                        </do-flash>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="278">
+                    <group eventID="2" id="-1">
+                        <do-flash comment="false" x="37" y="308">
+                            <group eventID="4" id="-1">
+                                <custom-code comment="false" x="48" y="328">
+                                    <int id="0" val="setBackground(&amp;quot;Cloud&amp;quot;, &amp;quot;Vintage&amp;quot;)"/>
+                                </custom-code>
+                            </group>
+                        </do-flash>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </eq>
+                </else-if>
             </group>
         </init>
     </group>
@@ -57,27 +94,15 @@
                             <int id="2" val="_MoveLeftKey"/>
                             <int id="3" val="right"/>
                         </set-attribute>
-                        <set-attribute comment="false" x="37" y="181">
-                            <get-val-219-1 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="Running"/>
-                            <int id="2" val="_RightKey"/>
-                            <int id="3" val="left"/>
-                        </set-attribute>
-                        <set-attribute comment="false" x="37" y="213">
-                            <get-val-219-1 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="Running"/>
-                            <int id="2" val="_LeftKey"/>
-                            <int id="3" val="right"/>
-                        </set-attribute>
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-game-val-4 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <else-if comment="false" x="26" y="257">
+                <else-if comment="false" x="26" y="193">
                     <group eventID="3" id="-1">
-                        <play-sound4 comment="false" x="37" y="287">
+                        <play-sound4 comment="false" x="37" y="223">
                             <int id="0" val="0"/>
                             <SOUND eid="473" id="1"/>
                         </play-sound4>
@@ -87,9 +112,9 @@
                         <int id="1" val="1"/>
                     </eq>
                 </else-if>
-                <else-if comment="false" x="26" y="326">
+                <else-if comment="false" x="26" y="262">
                     <group eventID="3" id="-1">
-                        <play-sound4 comment="false" x="37" y="356">
+                        <play-sound4 comment="false" x="37" y="292">
                             <int id="0" val="0"/>
                             <SOUND eid="481" id="1"/>
                         </play-sound4>
@@ -99,7 +124,7 @@
                         <int id="1" val="2"/>
                     </eq>
                 </else-if>
-                <showhide-layer comment="false" x="26" y="395">
+                <showhide-layer comment="false" x="26" y="331">
                     <int id="0" val="1"/>
                     <plus comment="false" id="1" x="0" y="0">
                         <get-game-val-4 comment="false" id="0" x="0" y="0"/>
@@ -117,6 +142,20 @@
                 <int id="0" val="0"/>
             </filter-sat>
         </apply-filter>
+    </group>
+    <group eventID="3" id="2">
+        <set-attribute comment="false" x="252" y="408">
+            <get-val-219-1 comment="false" id="0" x="0" y="0"/>
+            <int id="1" val="Running"/>
+            <int id="2" val="_RightKey"/>
+            <int id="3" val="left"/>
+        </set-attribute>
+        <set-attribute comment="false" x="252" y="440">
+            <get-val-219-1 comment="false" id="0" x="0" y="0"/>
+            <int id="1" val="Running"/>
+            <int id="2" val="_LeftKey"/>
+            <int id="3" val="right"/>
+        </set-attribute>
     </group>
     <group eventID="3" id="-1"/>
     <group eventID="4" id="0">
@@ -162,6 +201,15 @@
             <int id="0" val="resetState"/>
         </event-custom>
     </group>
+    <group eventID="4" id="1">
+        <do-flash comment="false" x="44" y="372">
+            <group eventID="4" id="-1">
+                <custom-code comment="false" x="55" y="392">
+                    <int id="0" val="setBackground(&amp;quot;Cloud&amp;quot;, &amp;quot;Hell&amp;quot;)"/>
+                </custom-code>
+            </group>
+        </do-flash>
+    </group>
     <group eventID="4" id="-1"/>
     <group eventID="5" id="0">
         <step comment="false" x="52" y="14">
@@ -180,24 +228,12 @@
                             <int id="2" val="_MoveLeftKey"/>
                             <int id="3" val="right"/>
                         </set-attribute>
-                        <set-attribute comment="false" x="74" y="133">
-                            <get-val-219-1 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="Running"/>
-                            <int id="2" val="_RightKey"/>
-                            <int id="3" val="left"/>
-                        </set-attribute>
-                        <set-attribute comment="false" x="74" y="165">
-                            <get-val-219-1 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="Running"/>
-                            <int id="2" val="_LeftKey"/>
-                            <int id="3" val="right"/>
-                        </set-attribute>
-                        <actor-enabledisable-snippet comment="false" x="74" y="197">
+                        <actor-enabledisable-snippet comment="false" x="74" y="133">
                             <get-val-219-1 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="1"/>
                             <int id="2" val="Camera Follow Player"/>
                         </actor-enabledisable-snippet>
-                        <camera-move comment="false" x="74" y="229">
+                        <camera-move comment="false" x="74" y="165">
                             <plus comment="false" id="0" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
                                     <get-val-219-1 comment="false" id="0" x="0" y="0"/>
@@ -237,7 +273,7 @@
                                 </times>
                             </plus>
                         </camera-move>
-                        <set-val-219-2 comment="false" x="74" y="287">
+                        <set-val-219-2 comment="false" x="74" y="223">
                             <mod comment="false" id="0" x="0" y="0">
                                 <plus comment="false" id="0" x="0" y="0">
                                     <get-val-219-2 comment="false" id="0" x="0" y="0"/>
@@ -252,9 +288,9 @@
                         <int id="1" val="0"/>
                     </eq>
                 </if>
-                <else-if comment="false" x="63" y="334">
+                <else-if comment="false" x="63" y="270">
                     <group eventID="3" id="-1">
-                        <set-attribute comment="false" x="74" y="364">
+                        <set-attribute comment="false" x="74" y="300">
                             <get-val-219-1 comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="Jumping"/>
                             <int id="2" val="_JumpForce"/>
@@ -266,7 +302,7 @@
                         <int id="1" val="1"/>
                     </eq>
                 </else-if>
-                <else-if comment="false" x="63" y="408">
+                <else-if comment="false" x="63" y="344">
                     <group eventID="5" id="-1"/>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-game-val-4 comment="false" id="0" x="0" y="0"/>
@@ -289,6 +325,20 @@
                 <int id="0" val="0"/>
             </filter-sat>
         </apply-filter>
+    </group>
+    <group eventID="5" id="3">
+        <set-attribute comment="false" x="144" y="336">
+            <get-val-219-1 comment="false" id="0" x="0" y="0"/>
+            <int id="1" val="Running"/>
+            <int id="2" val="_RightKey"/>
+            <int id="3" val="left"/>
+        </set-attribute>
+        <set-attribute comment="false" x="144" y="368">
+            <get-val-219-1 comment="false" id="0" x="0" y="0"/>
+            <int id="1" val="Running"/>
+            <int id="2" val="_LeftKey"/>
+            <int id="3" val="right"/>
+        </set-attribute>
     </group>
     <group eventID="5" id="-1"/>
     <group eventID="6" id="0">
