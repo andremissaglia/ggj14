@@ -190,10 +190,10 @@
         <anim across="2" atlasID="-1" down="1" durations="10,100" height="42" id="20" loop="false" name="jump-l" numframes="2" originx="0" originy="0" width="64">
             <poly data="4,5,9,30,9,30,35,5,35" density="0.1" fric="0.2" gid="-1000" id="0" name="jump-r" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="10" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100" height="48" id="23" loop="true" name="Attack-l" numframes="10" originx="0" originy="0" width="320">
+        <anim across="10" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100" height="48" id="23" loop="false" name="Attack-l" numframes="10" originx="0" originy="0" width="320">
             <poly data="4,5,9,30,9,30,35,5,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 22" rest="0.0" sensor="false"/>
         </anim>
-        <anim across="10" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100" height="48" id="22" loop="true" name="Attack-r" numframes="10" originx="0" originy="0" width="320">
+        <anim across="10" atlasID="-1" down="1" durations="100,100,100,100,100,100,100,100,100,100" height="48" id="22" loop="false" name="Attack-r" numframes="10" originx="0" originy="0" width="320">
             <poly data="4,5,9,30,9,30,35,5,35" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 22" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
@@ -205,15 +205,16 @@
                 <prop id="3" list="0" val="idle-r"/>
                 <prop id="4" list="0" val="idle-l"/>
                 <prop id="5" list="1" val="">
-                    <text order="0" value="Ground Pounding"/>
-                    <text order="1" value="Ducking"/>
-                    <text order="2" value="Wall Sliding"/>
-                    <text order="3" value="Falling"/>
-                    <text order="4" value="Wall Jumping"/>
-                    <text order="5" value="Air Jumping"/>
-                    <text order="6" value="Jumping"/>
-                    <text order="7" value="Running"/>
-                    <text order="8" value="Walking"/>
+                    <text order="0" value="Attack"/>
+                    <text order="1" value="Ground Pounding"/>
+                    <text order="2" value="Ducking"/>
+                    <text order="3" value="Wall Sliding"/>
+                    <text order="4" value="Falling"/>
+                    <text order="5" value="Wall Jumping"/>
+                    <text order="6" value="Air Jumping"/>
+                    <text order="7" value="Jumping"/>
+                    <text order="8" value="Running"/>
+                    <text order="9" value="Walking"/>
                 </prop>
                 <prop id="6" list="0" val="false"/>
                 <prop id="7" list="0" val="false"/>
@@ -240,8 +241,8 @@
                 <prop id="1" list="0" val="false"/>
                 <prop id="2" list="0" val="0"/>
                 <prop id="8" list="0" val="false"/>
-                <prop id="15" list="0" val="24.0"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="24.0"/>
                 <prop id="17" list="0" val="-24.0"/>
                 <prop id="16" list="0" val="14.0"/>
                 <prop id="18" list="0" val="14.0"/>
@@ -266,6 +267,7 @@
                 <prop id="54" list="0" val="fall-l"/>
                 <prop id="53" list="0" val=""/>
                 <prop id="52" list="0" val=""/>
+                <prop id="59" list="0" val="Attack"/>
                 <prop id="58" list="0" val="true"/>
                 <prop id="57" list="0" val="Attack-r"/>
                 <prop id="56" list="0" val="Attack-l"/>
@@ -285,8 +287,8 @@
                 <prop id="12" list="0" val="left"/>
                 <prop id="13" list="0" val="0.4"/>
                 <prop id="14" list="0" val="true"/>
-                <prop id="15" list="0" val="run-r"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="run-r"/>
                 <prop id="17" list="0" val="run-r"/>
                 <prop id="16" list="0" val="run-l"/>
                 <prop id="19" list="0" val="run-r"/>
@@ -306,7 +308,7 @@
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="17" list="0" val="0"/>
                 <prop id="16" list="0" val="0"/>
-                <prop id="19" list="0" val="-1"/>
+                <prop id="19" list="0" val="No Sound"/>
                 <prop id="18" list="0" val="0.65"/>
                 <prop id="21" list="0" val="Jumping"/>
                 <prop id="20" list="0" val="30"/>
@@ -381,8 +383,8 @@
                 <prop id="12" list="0" val="250"/>
                 <prop id="13" list="0" val="65"/>
                 <prop id="14" list="0" val="jump-r"/>
-                <prop id="15" list="0" val="jump-l"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="jump-l"/>
                 <prop id="17" list="0" val="Wall Jumping"/>
                 <prop id="16" list="0" val="false"/>
             </s>
