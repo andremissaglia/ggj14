@@ -23,28 +23,19 @@
                 </print>
                 <if comment="false" x="26" y="147">
                     <group eventID="2" id="-1">
-                        <if comment="false" x="37" y="177">
-                            <group eventID="2" id="-1">
-                                <set-game-val-4 comment="false" x="48" y="207">
-                                    <int id="0" val="0"/>
-                                </set-game-val-4>
-                            </group>
-                            <eq comment="false" id="0" x="0" y="0">
-                                <get-game-val-4 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="1"/>
-                            </eq>
-                        </if>
-                        <else comment="false" x="37" y="239">
-                            <group eventID="2" id="-1">
-                                <set-game-val-4 comment="false" x="48" y="259">
-                                    <int id="0" val="1"/>
-                                </set-game-val-4>
-                            </group>
-                        </else>
-                        <set-game-val-5 comment="false" x="37" y="291">
+                        <set-game-val-4 comment="false" x="37" y="177">
+                            <mod comment="false" id="0" x="0" y="0">
+                                <plus comment="false" id="0" x="0" y="0">
+                                    <get-game-val-4 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="1"/>
+                                </plus>
+                                <int id="1" val="3"/>
+                            </mod>
+                        </set-game-val-4>
+                        <set-game-val-5 comment="false" x="37" y="212">
                             <get-val-222-4 comment="false" id="0" x="0" y="0"/>
                         </set-game-val-5>
-                        <scene-shout comment="false" x="37" y="316">
+                        <scene-shout comment="false" x="37" y="237">
                             <int id="0" val="setState"/>
                         </scene-shout>
                     </group>

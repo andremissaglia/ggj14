@@ -68,6 +68,7 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_219_219_SongChange" desc="" description="" design="true" drawOrder="0" id="219" language="" name="SongChange" oid="-1" package="scripts" scenespecific="false" shared="false" type="scene">
         <actor default="" desc="" dropdown="" fullname="Player" hidden="false" id="1" name="_Player" order="0"/>
+        <number default="0" desc="" dropdown="" fullname="t" hidden="true" id="2" name="_t" order="1"/>
         <blocks/>
         <events>
             <event displayName="Drawing" enabled="true" id="1" name="draw" order="1" repeats="true"/>
