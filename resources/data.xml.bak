@@ -90,7 +90,6 @@
     <custom-block blocktag="custom-363" blocktype="NORMAL" code="Number((~.say(&quot;Walking&quot;, &quot;GetWalkAccel&quot;)))" desc="" global="false" gui="Get Walk Accel for %0" id="363" message="GetWalkAccel" name="GetWalkAccel" oid="-1" return="NUMBER" shared="false" snippetID="178">
         <blank name="Self" order="0" type="ACTOR"/>
     </custom-block>
-    <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="112" name="Hills 1" numframes="1" oid="-1" repeats="false" resized="false" shared="false" width="1220" xpf="1.0" ypf="1.0"/>
     <sprite atlasID="0" default="15" desc="" height="32" id="433" name="Jumper" shared="false" width="16">
         <anim across="4" atlasID="-1" down="1" durations="1150,80,1200,80" height="42" id="1" loop="true" name="idle-r" numframes="4" originx="0" originy="0" width="128">
             <poly data="4,0,0,32,0,32,42,0,42" density="0.1" fric="0.2" gid="-1000" id="0" name="idle-r" rest="0.0" sensor="false"/>
@@ -188,8 +187,8 @@
                 <prop id="12" list="0" val="left"/>
                 <prop id="13" list="0" val="0.4"/>
                 <prop id="14" list="0" val="true"/>
-                <prop id="15" list="0" val="run-r"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="run-r"/>
                 <prop id="17" list="0" val="run-r"/>
                 <prop id="16" list="0" val="run-l"/>
                 <prop id="19" list="0" val="run-r"/>
@@ -284,8 +283,8 @@
                 <prop id="12" list="0" val="250"/>
                 <prop id="13" list="0" val="65"/>
                 <prop id="14" list="0" val="jump-r"/>
-                <prop id="15" list="0" val="jump-l"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="15" list="0" val="jump-l"/>
                 <prop id="17" list="0" val="Wall Jumping"/>
                 <prop id="16" list="0" val="false"/>
             </s>
